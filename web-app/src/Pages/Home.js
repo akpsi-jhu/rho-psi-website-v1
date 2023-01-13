@@ -4,6 +4,7 @@ import Hero from "../Components/Hero"
 import Navbar from "../Components/Navbar"
 import hero from "../assets/city.png";
 import About from "../Components/About"
+import Logos from "../Components/Logos";
 
 
 
@@ -31,6 +32,11 @@ const Home = () => {
         <Box marginY={6} marginX={20}>
         <About></About>
         </Box>
+        <Logos></Logos>
+        <Box marginY={6} marginX={20}>
+        <About></About>
+        </Box>
+
 
 
         </Stack>

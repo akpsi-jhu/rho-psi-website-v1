@@ -82,12 +82,12 @@
           .card__content {
             background-color: var(--gold-color);
             transform: translateY(0);
-            transition-delay: 500ms;
+            transition-delay: 100ms;
 
     
             > *:not(.card__title) {
               opacity: 1;
-              transition-delay: 1000ms;
+              transition-delay: 100ms;
             }
           }
     

@@ -1,0 +1,52 @@
+  
+  img {
+    height: 60px;
+    padding: 0 15px;
+    object-fit:contain;
+  }
+  
+  img:last-of-type {
+    padding-left: 0;
+  }
+  
+  .inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: #DCA023;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+  }
+  
+  .wrapper {
+    position: absolute;
+    display: flex;
+
+  }
+  
+  section {
+    display: flex;
+    animation: swipe var(--speed) linear infinite backwards;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  @keyframes swipe {
+    0% {
+      transform: translate(0);
+    }
+  
+    100% {
+      transform: translate(-100%);
+    }
+  }
+  
