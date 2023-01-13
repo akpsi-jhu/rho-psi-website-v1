@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Typography, Button, Box, Stack } from "@mui/material";
-import hero from "../assets/city.png";
 import { styled } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 

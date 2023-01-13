@@ -15,7 +15,9 @@ const Title = (props) => {
             <Typography variant="h3" sx = {{
                 width: 1400
             }}>{props.header}</Typography>
-            <Divider orientation="vertical" flexItem></Divider>
+            <Divider orientation="vertical" flexItem sx = {{
+                borderRightWidth: 5 
+            }}></Divider>
             <Typography variant="h6">{props.body}</Typography>
 
         </Stack>
