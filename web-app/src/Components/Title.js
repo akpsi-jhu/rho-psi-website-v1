@@ -1,8 +1,6 @@
 import React from "react";
 import { Stack, Box, Typography, Divider, Button } from "@mui/material";
-import Hero from "../Components/Hero"
-import Navbar from "../Components/Navbar"
-import hero from "../assets/city.png";
+
 
 
 
