@@ -13,11 +13,11 @@ import ImageSlideshow from "./ImageSlideshow";
 
 
 
-const About = () => {
+const Rush = () => {
 
 
 	return (
-        <Stack spacing = {3}>
+        <Stack spacing = {3}  >
             <TagHeader text="Recruitment" textAlign></TagHeader>
         <Stack direction="row" spacing = {10}>
             <Stack spacing={4} textAlign="left">
@@ -42,4 +42,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default Rush;

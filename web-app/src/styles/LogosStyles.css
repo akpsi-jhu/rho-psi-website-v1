@@ -11,15 +11,17 @@
   
   .inner {
     position: relative;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     height: 120px;
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
 
-    background-color: #DCA023;
     justify-content: center;
     align-items: center;
+    background-color: #DCA023;
+
 
 
 
@@ -29,6 +31,12 @@
   .wrapper {
     position: absolute;
     display: flex;
+    width: 100vw;
+    max-width: 1920px;
+    overflow: hidden;
+
+    
+
 
   }
   

@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
 return (
-	<Stack py={4} direction="column" spacing={3} sx ={{backgroundColor: '#0C406F', color: "white"}}>
+	<Stack py={4} direction="column" spacing={3} sx ={{backgroundColor: '#0C406F', color: "white"}} width='100vw'>
 	<Typography  
                 variant="h5"
                 component="div"

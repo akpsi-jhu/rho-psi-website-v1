@@ -28,8 +28,10 @@ const Hero = () => {
 				minHeight: "600px",
 				alignItems: "end",
                // backgroundImage: `url(${hero})`,
-				backgroundRepeat: "no-repeat",
-				backgroundSize: "cover",
+				//backgroundRepeat: "no-repeat",
+				//backgroundSize: "cover",
+				width: "100vw",
+				maxWidth: 1920,
 			}}>
 				<Stack spacing={2} sx = {{
                     marginBottom: 26,
