@@ -6,7 +6,7 @@ import hero from "../assets/city.png";
 import About from "../Components/About"
 import Rush from "../Components/Rush"
 import Logos from "../Components/Logos";
-
+import Footer from "../Components/Footer";
 
 
 
@@ -38,7 +38,7 @@ const Home = () => {
         <Box marginY={6} marginX={20}>
         <Rush></Rush>
         </Box>
-        
+        <Footer />
 
 
 
