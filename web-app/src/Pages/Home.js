@@ -31,11 +31,11 @@ const Home = () => {
         <Navbar></Navbar>
         <Hero></Hero>                     
         </Box>
-        <Box marginY={6} marginX={20}>
+        <Box marginY={10} marginX={30}>
         <About></About>
         </Box>
         <Logos></Logos>
-        <Box marginY={6} marginX={20}>
+        <Box marginY={10} marginX={30}>
         <Rush></Rush>
         </Box>
         

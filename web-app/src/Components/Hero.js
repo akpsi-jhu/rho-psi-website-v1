@@ -32,8 +32,8 @@ const Hero = () => {
 				backgroundSize: "cover",
 			}}>
 				<Stack spacing={2} sx = {{
-                    marginBottom: 25,
-                    marginLeft: 15
+                    marginBottom: 26,
+                    marginLeft: 20
 
                 }}>
                     <Stack spacing={.5} sx = {{ }}>

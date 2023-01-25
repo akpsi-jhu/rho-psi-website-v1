@@ -11,7 +11,7 @@ import socialIMG from "../assets/social.png";
 
 const About = () => {
 	return (
-        <Stack spacing = {8}>
+        <Stack spacing = {5}>
         <Stack spacing={4}>
         <TagHeader text="About who we are"></TagHeader>
         <Title header="Shaping People Shaping Business" body="Since our founding in 2001, our chapter has worked to develop
