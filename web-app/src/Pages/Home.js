@@ -37,7 +37,7 @@ const Home = () => {
             <About></About>
             </Box>
             <Logos></Logos>
-            <Box marginY={10} marginX={{xs: 5, sm: 10, md: 15, lg: 20, xl: 30}} maxWidth={1920}>
+            <Box marginY={10} paddingX={{xs: 5, sm: 10, md: 15, lg: 20, xl: 30}} maxWidth={1920}>
             <Rush></Rush>
             </Box>
             <Footer/>
