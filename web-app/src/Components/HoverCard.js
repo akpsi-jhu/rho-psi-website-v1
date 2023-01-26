@@ -2,13 +2,15 @@ import { Icon } from "@mui/material";
 import React from "react";
 import "../styles/HoverCardStyles.scss"
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import { Stack } from "@mui/system";
+import { Box, maxWidth, Stack } from "@mui/system";
 
 
 
 const HoverCard = ({ body, image, title }) => {
   return (
-    <div className="card" style={{ backgroundImage: `url(${image})` }}>
+    <Box className="card" style={{ backgroundImage: `url(${image})` }} sx = {{
+      width: '100%',
+    }} >
       <Stack className="card__content">
         <h4 className="card__title">{title}</h4>
         <p className="card__body">{body}</p>
@@ -20,7 +22,7 @@ const HoverCard = ({ body, image, title }) => {
             </button>
         </Stack>
       </Stack>
-    </div>
+    </Box>
   );
 };
 

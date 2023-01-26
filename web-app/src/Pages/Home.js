@@ -14,33 +14,34 @@ import { maxWidth } from "@mui/system";
 //fontSize={{xs: 24, md: 30, lg: 40, xl: 42}}
 const Home = () => {
 	return (
-        <Stack alignItems='center'>
-        <Box sx = {{
-                height: "100vh",
-                width: "100vw",
-				minHeight: "600px",
-                backgroundImage: `url(${hero})`,
-                backgroundAttachment: "fixed",
-				backgroundRepeat: "no-repeat",
-				backgroundSize: "cover",
-                overflowY: "hidden",
-                overflowX: "hidden",
-                position: "relative",
-                display: "flex",
-                justifyContent: "center"
+        <Stack alignItems='center' overflow='hidden'>
+            <Box sx = {{
+                    height: "100vh",
+                    width: "100vw",
+                    minHeight: "600px",
+                    backgroundImage: `url(${hero})`,
+                    backgroundAttachment: "fixed",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    overflowY: "hidden",
+                    overflowX: "hidden",
+                    position: "relative",
+                    display: "flex",
+                    justifyContent: "center"
 
-        }}>
-        <Navbar></Navbar>
-        <Hero></Hero>                     
-        </Box>
-        <Box marginY={10} marginX={{xs: 5, md: 15, lg: 20, xl: 30}} maxWidth={1920} >
-        <About></About>
-        </Box>
-        <Logos></Logos>
-        <Box marginY={10} marginX={{xs: 5, md: 15, lg: 20, xl: 30}} maxWidth={1920}>
-        <Rush></Rush>
-        </Box>
-        <Footer/>
+            }}>
+            <Navbar></Navbar>
+            <Hero></Hero>                     
+            </Box>
+            <Box marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 10, md: 15, lg: 20, xl: 30}} maxWidth={1920} >
+            <About></About>
+            </Box>
+            <Logos></Logos>
+            <Box marginY={10} marginX={{xs: 5, sm: 10, md: 15, lg: 20, xl: 30}} maxWidth={1920}>
+            <Rush></Rush>
+            </Box>
+            <Footer/>
+
 
 
 
