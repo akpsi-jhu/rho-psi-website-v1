@@ -11,6 +11,7 @@ import { maxWidth } from "@mui/system";
 import Title from "../Components/Title";
 import EmailForm from "../Components/EmailForm";
 import recruitment from "../assets/aboveandbeyond.png";
+import Faq from "../Components/Faq"
 
 
 
@@ -26,6 +27,7 @@ const Recruitment = () => {
 Like our Facebook page: https://www.facebook.com/akpsibruins Follow us on Instagram for more updates: @ucla.akpsi"></Title>
                 <img src={recruitment} alt={"Spring rush"}  style={{width: '100%', objectFit: 'cover', height: 'auto'}}/>
             <Rush></Rush>
+            <Faq></Faq>
             </Stack>
             <Footer/>
 
