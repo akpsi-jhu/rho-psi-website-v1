@@ -14,7 +14,7 @@ import EmailForm from "../Components/EmailForm";
 
 
 //fontSize={{xs: 24, md: 30, lg: 40, xl: 42}}
-const Home = () => {
+const Contact = () => {
 	return (
         <Stack alignItems='center' overflow='hidden'>
 
@@ -33,4 +33,4 @@ You may also reach us directly at akpsi@gmail.com or via Instagram @akpsi_jhu! W
 	);
 };
 
-export default Home;
+export default Contact;
