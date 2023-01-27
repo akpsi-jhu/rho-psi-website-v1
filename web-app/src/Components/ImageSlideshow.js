@@ -14,7 +14,7 @@ export default function ImageSlideshow() {
 ];
 
   return (
-      <Box className="slide-container" maxWidth={500} width="300%">
+      <Box className="slide-container" maxWidth={{xs: 400, sm: 800, md: 500}} width="300%">
         <Fade arrows={false} autoplay={true} infinite={true} pauseOnHover={false} indicators={true} duration={2000} transitionDuration={2000}>
           <Box className="each-fade">
             <div className="image-container">

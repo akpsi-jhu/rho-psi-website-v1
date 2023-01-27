@@ -33,9 +33,10 @@ const Hero = () => {
 				width: "100vw",
 				maxWidth: 1920,
 			}}>
+				
 				<Stack spacing={2} sx = {{
                     marginBottom: 26,
-                    marginLeft: {xs: 0, sm: 3, md: 5, lg: 10, xl: 20}
+                    marginLeft: {xs: 4, sm: 4, md: 5, lg: 10, xl: 20}
 
                 }}>
                     <Stack spacing={.5} sx = {{ }}>

@@ -9,12 +9,15 @@ const Title = (props) => {
 	return (
         <Stack direction={{ sm: 'column', md: 'row' }} spacing={{xs: 2, md: 5}} sx = {{
             textAlign: "left",
-            width: '100%'
+            width: '100%',
+            alignItems: "center"
         }}>
             <Typography variant="h3" sx = {{
-                fontSize: {xs: 26, md: 29, lg: 36, xl: 36},
+                fontSize: {xs: 26, sm: 26, md: 30, lg: 36, xl: 36},
                 lineHeight: {md: 1.3, lg: 1.3, xl: 1.3},
-                width: {md: 800, lg: 1000, xl: 1000},
+                whiteSpace: props.wrap ? "normal": "nowrap",
+                width: props.wrap ? '100%' : '%',
+                maxWidth: {md: 800, lg: 1000, xl: 1000},
             }}>{props.header}</Typography>
             <Divider orientation={{sm: "horizontal", md: "vertical" }}flexItem sx = {{
                 borderRightWidth: 5,

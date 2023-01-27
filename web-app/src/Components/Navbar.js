@@ -12,7 +12,8 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../styles/HeaderStyles.css"
-const Header = () => {
+import { color } from "@mui/system";
+const Navbar = (props) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   // hndle menu click
   const handleDrawerToggle = () => {
@@ -20,7 +21,7 @@ const Header = () => {
   };
   //menu drawer
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", color: "#0C406F"}}>
       <Typography
         variant="h6"
         component="div"
@@ -50,7 +51,7 @@ const Header = () => {
   return (
     <>
       <Box>
-        <AppBar component={"nav"} sx={{ bgcolor: "transparent", boxShadow: "none", marginTop: 4}}>
+        <AppBar component={"nav"} position="absolute"  sx={{ bgcolor: "transparent", boxShadow: "none", marginTop: 4, color: props.blue ? "#0C406F": "white"}}>
           <Toolbar>
             <Box sx= {{
                 width: "100%",
@@ -126,4 +127,4 @@ const Header = () => {
 };
 
 
-export default Header;
+export default Navbar;

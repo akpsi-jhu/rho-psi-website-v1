@@ -30,14 +30,14 @@ const Home = () => {
                     justifyContent: "center"
 
             }}>
-            <Navbar></Navbar>
-            <Hero></Hero>                     
+            <Hero></Hero>     
+            <Navbar blue={false}></Navbar>
             </Box>
-            <Box marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 10, md: 15, lg: 20, xl: 30}} maxWidth={1920} >
+            <Box marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 5, md: 5, lg: 20, xl: 30}} maxWidth={1920} >
             <About></About>
             </Box>
             <Logos></Logos>
-            <Box marginY={10} paddingX={{xs: 5, sm: 10, md: 15, lg: 20, xl: 30}} maxWidth={1920}>
+            <Box marginY={10} paddingX={{xs: 5, sm: 5, md: 5, lg: 20, xl: 30}} maxWidth={1920}>
             <Rush></Rush>
             </Box>
             <Footer/>

@@ -9,7 +9,7 @@
   }
   .navigation-menu li a {
     text-decoration: none;
-    color: white;
+    color: inherit;
   }
   .active {
     color: DCA023 !important;
@@ -25,6 +25,6 @@
   .mobile-navigation li a {
     text-decoration: none;
     font-size: 1.4rem;
-    color: black;
+    color: inherit;
   }
   

@@ -1,8 +1,7 @@
-import { Icon } from "@mui/material";
 import React from "react";
 import "../styles/HoverCardStyles.scss"
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import { Box, maxWidth, Stack } from "@mui/system";
+import { Box, Stack } from "@mui/system";
 
 
 
