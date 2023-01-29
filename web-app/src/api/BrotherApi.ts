@@ -17,8 +17,13 @@ export interface Brother {
     active: boolean;
     bio: string;
     email: string;
+    jhuEmail: string;
     phoneNumber: string;
     hometown: string;
+    imageUrl: string;
+    linkedInUrl: string;
+    birthdate: Timestamp;
+    pronouns: string;
 }
 
 export interface IBrotherApi {
