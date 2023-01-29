@@ -1,6 +1,6 @@
 import { db } from "./firebase.js";
 import { IBrotherApi, Brother, BrotherId } from "../BrotherApi.js";
-import { collection, addDoc, getDocs, deleteDoc, setDoc, doc } from "firebase/firestore";
+import { collection, addDoc, getDocs, deleteDoc, setDoc, doc, where, query } from "firebase/firestore";
 
 export class BrotherApi implements IBrotherApi {
   // This refers to the item's folder in the Firestore
@@ -47,6 +47,23 @@ export class BrotherApi implements IBrotherApi {
 
       return list
   }
+
+    async getActiveBrothersList(): Promise<Brother[]> {
+        // TODO: add where clause so that only authenticated users can access
+        const q = query(this.brothersCollection, where("active", "==", true));
+        let querySnapshot = await getDocs(this.brothersCollection);
+
+        // append the id of the document to the data from Firestore to create full Item
+        let list = querySnapshot.docs.map(
+            (doc) =>
+                ({
+                    id: doc.id,
+                    ...doc.data(),
+                } as Brother)
+        );
+
+        return list
+    }
 
   /**
    * Replaces an brother with the new information

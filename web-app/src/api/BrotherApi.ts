@@ -28,6 +28,8 @@ export interface Brother {
 
 export interface IBrotherApi {
     getBrothersList: () => Promise<Brother[]>;
+    getActiveBrothersList: () => Promise<Brother[]>;
+
     addBrother: (newBrother: Brother) => Promise<BrotherId>;
     updateBrother: (brother: Brother) => Promise<void>;
     removeBrother: (brotherId: BrotherId) => Promise<void>;
