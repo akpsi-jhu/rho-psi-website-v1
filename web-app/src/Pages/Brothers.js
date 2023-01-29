@@ -21,14 +21,16 @@ const Home = () => {
     const [brothers, setBrothers] = useState([]);
 
     const fetchItems = async() => {
-        const data = await api.getItemList();
+        const data = await api.getBrothersList();
         const brothers = data;
         setBrothers(brothers);
       }
     
       useEffect(() => {
         fetchItems()
-      }, []);
+        console.log(brothers)
+
+      });
 
       //need to create different includes based on class
       const includes = (brother) => {
