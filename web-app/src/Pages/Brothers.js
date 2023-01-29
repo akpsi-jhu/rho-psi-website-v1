@@ -15,22 +15,13 @@ const Home = () => {
     const api = new BrotherApi();
 
     const pcNames = ["Alpha Lambda", "Alpha Mu", "Alpha Nu", "Alpha Xi", "Alpha Omicron"]
-    
-
 
     const [brothers, setBrothers] = useState([]);
-
-    const fetchItems = async() => {
-        const data = await api.getBrothersList();
-        const brothers = data;
-        setBrothers(brothers);
-      }
-    
       useEffect(() => {
-        fetchItems()
-        console.log(brothers)
-
-      });
+          api.getActiveBrothersList().then(result => {
+              setBrothers(result);
+          })
+      }, []);
 
       //need to create different includes based on class
       const includes = (brother) => {
