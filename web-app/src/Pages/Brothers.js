@@ -39,25 +39,40 @@ const Home = () => {
         */
       };
 
-    
-    return (
-        <Stack alignItems='center' overflow='hidden'>
-            <Navbar blue={true}></Navbar>
-            <Stack marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 5, md: 5, lg: 20, xl: 30}} maxWidth={1920} spacing={6} >
-                <Title wrap={false} header="Active Brothers" body="We’re more than just peers in a business organization on campus. We’re here to build meaningful friendships to last a life time. Meet the amazing members of the Eta Epsilon chapter, where we celebrate our diversity of backgrounds, interests, and perspectives."></Title>
-                <Box>
-                    {brothers.filter(includes).map((brother, index) => (
-                        <BrotherCard 
-                            brother={brother}
-                            key={index}
-                        ></BrotherCard>
-                    ))}
-                </Box>
-
-            
+    if (!brothers.length) {
+        return(
+            <Stack alignItems='center' overflow='hidden'>
+                <Navbar blue={true}></Navbar>
+                <Stack marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 5, md: 5, lg: 20, xl: 30}} maxWidth={1920} spacing={6} >
+                    <Title wrap={false} header="Active Brothers" body="We’re more than just peers in a business organization on campus. We’re here to build meaningful friendships to last a life time. Meet the amazing members of the Eta Epsilon chapter, where we celebrate our diversity of backgrounds, interests, and perspectives."></Title>
+                    <Typography>
+                        Loading...
+                    </Typography>
+                </Stack>
+                <Footer/>
             </Stack>
-            <Footer/>
-        </Stack>
-    );
+        )
+    }
+    else {
+        return (
+            <Stack alignItems='center' overflow='hidden'>
+                <Navbar blue={true}></Navbar>
+                <Stack marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 5, md: 5, lg: 20, xl: 30}} maxWidth={1920} spacing={6} >
+                    <Title wrap={false} header="Active Brothers" body="We’re more than just peers in a business organization on campus. We’re here to build meaningful friendships to last a life time. Meet the amazing members of the Eta Epsilon chapter, where we celebrate our diversity of backgrounds, interests, and perspectives."></Title>
+                    <Box>
+                        {brothers.map((brother, index) => (
+                            <BrotherCard
+                                brother={brother}
+                                key={index}
+                            ></BrotherCard>
+                        ))}
+                    </Box>
+
+
+                </Stack>
+                <Footer/>
+            </Stack>
+        );
+    }
 };
 export default Home;
