@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Button, Box, Stack } from "@mui/material";
+import {Grid, Typography, Button, Box, Stack, ThemeProvider, useTheme} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 
@@ -47,7 +47,7 @@ const Hero = () => {
                         <Typography
                             fontFamily={"glegoo"}
                             variant='h4'
-                            fontSize={{xs: 35, sm: 35, md: 42, lg: 42, xl: 42}}
+                            fontSize={{xs: 30, sm: 30, md: 37, lg: 37, xl: 37}}
                             color='white'
                             >
                                 Johns Hopkins University

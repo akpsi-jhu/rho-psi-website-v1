@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import {
-  AppBar,
-  Box,
-  Divider,
-  Drawer,
-  IconButton,
-  Toolbar,
-  Typography,
+    AppBar,
+    Box, createTheme,
+    Divider,
+    Drawer,
+    IconButton, ThemeProvider,
+    Toolbar,
+    Typography,
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../styles/HeaderStyles.css"
 import { color } from "@mui/system";
+import {logoTheme} from "../themes/theme";
+
 const Navbar = (props) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   // hndle menu click
@@ -25,7 +27,7 @@ const Navbar = (props) => {
       <Typography
         variant="h6"
         component="div"
-        sx={{ flexGrow: 1, my: 2 }}
+        sx={{ flexGrow: 1, my: 2, }}
       >
         AKP
       </Typography>
@@ -60,15 +62,17 @@ const Navbar = (props) => {
                 fontFamily: "glegoo",
                 alignItems: "center"
             }}>
+                <ThemeProvider theme={logoTheme}>
                 <Typography 
                 variant="h4"
                 component="div"
                  sx = {{
-                    fontFamily: "glegoo",
+                     // fontFamily: "STIX Two Text", fontWeight: 500,
                     marginLeft: 20
                 }}
                 > AKΨ
                 </Typography>
+                </ThemeProvider>
                 <Box sx={{ display: { xs: "none", sm: "block"}, marginRight: 20, fontSize: 20 }}>
                 <ul className="navigation-menu">
                     <li>

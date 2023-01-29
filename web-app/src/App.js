@@ -4,9 +4,11 @@ import Home from "./Pages/Home"
 import Contact from "./Pages/Contact"
 import Recruitment from './Pages/Recruitment';
 import Brothers from './Pages/Brothers';
+import {createTheme, ThemeProvider} from "@mui/material";
 
 function App() {
     return (
+        <ThemeProvider theme={theme}>
         <div className="App">
             <BrowserRouter>
                 <Routes>
@@ -17,7 +19,26 @@ function App() {
                 </Routes>
             </BrowserRouter>
         </div>
+        </ThemeProvider>
     );
 }
+
+const theme = createTheme({
+    typography: {
+        fontFamily: [
+            'Open Sans',
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(','),
+    },
+});
 
 export default App;

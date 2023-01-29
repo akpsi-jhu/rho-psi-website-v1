@@ -6,20 +6,21 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {
     Stack,
     Typography,
-    IconButton,
-  } from "@mui/material";
+    IconButton, ThemeProvider,
+} from "@mui/material";
+
+import {logoTheme} from "../themes/theme";
 
 
 const Footer = () => {
 return (
 	<Stack py={4} direction="column" spacing={3} sx ={{backgroundColor: '#0C406F', color: "white"}} width='100vw'>
-	<Typography  
+        <ThemeProvider theme={logoTheme}>
+	<Typography
                 variant="h5"
                 component="div"
-                 sx = {{
-                    fontFamily: "glegoo",
-                }}
                 >AKΨ</Typography>
+        </ThemeProvider>
 	<Stack direction="row" spacing={2} justifyContent="center" >
         <IconButton href="https://www.instagram.com/akpsi_jhu/" aria-label="instagram" sx={{color: "white", border: 1}}>
             <InstagramIcon fontSize="small"/></IconButton>
