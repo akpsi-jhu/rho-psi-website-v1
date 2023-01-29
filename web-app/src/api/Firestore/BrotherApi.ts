@@ -51,7 +51,9 @@ export class BrotherApi implements IBrotherApi {
     async getActiveBrothersList(): Promise<Brother[]> {
         // TODO: add where clause so that only authenticated users can access
         const q = query(this.brothersCollection, where("active", "==", true));
-        let querySnapshot = await getDocs(this.brothersCollection);
+        // const q = query(this.brothersCollection, where("pledgeClass", "==", "Alpha Lambda"));
+
+        let querySnapshot = await getDocs(q);
 
         // append the id of the document to the data from Firestore to create full Item
         let list = querySnapshot.docs.map(

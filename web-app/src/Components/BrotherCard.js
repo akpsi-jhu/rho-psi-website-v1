@@ -3,8 +3,8 @@ import {Card, CardContent, CardMedia, Typography} from "@mui/material";
 const BrotherCard = (props) => {
     const {brother, key} = props;
     return (
-        <Card sx = {{ maxWidth: 345 }}>
-            <CardMedia sx={{ height: 400 }} image={brother.imageUrl}/>
+        <Card sx = {{boxShadow: "none"}}>
+            <CardMedia sx={{ height: 350, width: "110%"  }} component="img" image={brother.imageUrl}/>
             <CardContent>
                 <div>
                     <Typography sx ={{ fontWeight: "bold", display: 'inline-block'}} variant="body">
