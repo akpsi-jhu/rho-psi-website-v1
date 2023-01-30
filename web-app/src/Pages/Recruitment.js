@@ -10,7 +10,7 @@ import Footer from "../Components/Footer";
 import { maxWidth } from "@mui/system";
 import Title from "../Components/Title";
 import EmailForm from "../Components/EmailForm";
-import recruitment from "../assets/aboveandbeyond.png";
+import recruitment from "../assets/lightscamerarush.png";
 import Faq from "../Components/Faq"
 import TagHeader from "../Components/TagHeader";
 import SideBar from "../Components/Sidebar/Sidebar";

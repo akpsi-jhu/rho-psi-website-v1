@@ -20,7 +20,7 @@ const Hero = () => {
 	const navigate = useNavigate();
 
 	const navigateNext = () => {
-		navigate("/signup", { replace: true });
+		navigate("/recruitment", { replace: true });
 	};
 
 	const navigateRegister = () => {

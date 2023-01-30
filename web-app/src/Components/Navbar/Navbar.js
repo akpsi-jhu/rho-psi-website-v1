@@ -35,7 +35,12 @@ const Navbar = ({ toggle, blue }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo blue={blue}>
+            <NavLinkR blue={blue}
+                      to="/"
+                // smooth={true} duration={500} spy={true} exact='true' offset={-80}
+            >
             AKΨ
+            </NavLinkR>
           </NavLogo>
           <MobileIcon onClick={toggle} blue={blue}>
             <FaBars />
