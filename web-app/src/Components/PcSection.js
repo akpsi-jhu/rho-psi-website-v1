@@ -15,10 +15,10 @@ const PcSection = (props) => {
         <Stack
             direction="column"
             justifyContent="flex-start"
-            alignItems="flex-start"
+            alignItems="center"
             py = {8}
         >
-            <Typography variant="h4" marginBottom={3}>{pc}</Typography>
+            <Typography variant="h4" marginBottom={3} py={4}>{pc}</Typography>
             <Box>
                 <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 12, md: 20}}>
                     {pcBrothers.map((brother, index) => (

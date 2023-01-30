@@ -12,12 +12,12 @@ const BrotherCard = (props) => {
                     </Typography>
                 </div>
                 <div>
-                    <Typography sx ={{ display: 'inline-block' }} variant="body">
-                        {brother.majors.join(', ')}
+                    <Typography sx ={{ display: 'inline-block', fontSize: '14px' }} variant="body">
+                        {brother.majors[0]}
                     </Typography>
                 </div>
                 <div>
-                    <Typography sx ={{ display: 'inline-block' }} variant="body">
+                    <Typography sx ={{ display: 'inline-block', fontSize: '14px'}} variant="body">
                         {(new Date(brother.graduationDate.toMillis())).getFullYear()}
                     </Typography>
                 </div>

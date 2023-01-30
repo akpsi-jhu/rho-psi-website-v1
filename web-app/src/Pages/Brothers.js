@@ -20,7 +20,7 @@ const Home = () => {
 
     const api = new BrotherApi();
 
-    const pcNames = ["Alpha Lambda", "Alpha Mu", "Alpha Nu", "Alpha Xi", "Alpha Omicron", "Alpha Pi"]
+    const pcNames = ["Alpha Pi", "Alpha Omicron", "Alpha Xi", "Alpha Nu", "Alpha Mu", "Alpha Lambda"]
 
     // const pcNames = ["Alpha Xi"]
     const [brothers, setBrothers] = useState([]);
@@ -67,7 +67,7 @@ const Home = () => {
             <Navbar toggle={toggle} blue={true}></Navbar>
            <SideBar  isOpen={isOpen} toggle={toggle}/>  
                 <Stack marginY={{xs: 15, md:20}}  overflow='hidden' paddingX={{xs: 5, sm: 10, md: 20, lg: 30, xl: 40}} maxWidth={1920} spacing={4} >
-                    <Title wrap={false} header="Active Brothers" body="We’re more than just peers in a business organization on campus. We’re here to build meaningful friendships to last a life time. Meet the amazing members of the Eta Epsilon chapter, where we celebrate our diversity of backgrounds, interests, and perspectives."></Title>
+                    <Title wrap={false} header="Active Brothers" body="We’re more than just peers in a business organization on campus. We’re here to build meaningful friendships to last a life time. Meet the members of the Eta Epsilon chapter, where we celebrate our diversity of backgrounds and interests."></Title>
                     <Box>
                         {pcNames.map((pc) => (
                             <Stack>

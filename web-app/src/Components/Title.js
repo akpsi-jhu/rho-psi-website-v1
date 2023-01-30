@@ -18,6 +18,7 @@ const Title = (props) => {
                 whiteSpace: props.wrap ? "normal": "nowrap",
                 width: props.wrap ? '100%' : '%',
                 maxWidth: {md: 800, lg: 1000, xl: 1000},
+                fontWeight: '700'
             }}>{props.header}</Typography>
             <Divider orientation={{sm: "horizontal", md: "vertical" }}flexItem sx = {{
                 borderRightWidth: 5,
