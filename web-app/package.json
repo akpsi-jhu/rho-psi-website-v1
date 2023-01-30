@@ -1,6 +1,6 @@
 {
-  "name": "web-app",
-  "homepage": "https://skynth.github.io/AKPSI-Rho-Psi",
+  "name": "AKPSI JHU",
+  "homepage": "https://skynth.github.io/AKPSI-Rho-Psi/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
