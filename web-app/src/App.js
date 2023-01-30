@@ -10,7 +10,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
         <div className="App">
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home/>}></Route>
                     <Route path='/contact' element={<Contact/>}></Route>

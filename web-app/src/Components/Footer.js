@@ -22,14 +22,17 @@ return (
                 >AKΨ</Typography>
         </ThemeProvider>
 	<Stack direction="row" spacing={2} justifyContent="center" >
-        <IconButton target={"_blank"} href="https://www.instagram.com/akpsi_jhu/" aria-label="instagram" sx={{color: "white", border: 1}}>
+        <IconButton href="https://www.instagram.com/akpsi_jhu/" aria-label="instagram" sx={{color: "white", border: 1}}>
             <InstagramIcon fontSize="small"/></IconButton>
-        <IconButton target={"_blank"} href="https://www.facebook.com/johnshopkinsakpsi/" aria-label="facebook" sx={{color: "white", border: 1}}>
+        <IconButton href="https://www.facebook.com/johnshopkinsakpsi/" aria-label="facebook" sx={{color: "white", border: 1}}>
             <FacebookOutlinedIcon fontSize="small"/></IconButton>
-        <IconButton target={"_blank"} href="https://www.linkedin.com/company/alpha-kappa-psi" aria-label="linkedin" sx={{color: "white", border: 1}}>
+        <IconButton href="https://www.linkedin.com/company/alpha-kappa-psi" aria-label="linkedin" sx={{color: "white", border: 1}}>
             <LinkedInIcon fontSize="small"/></IconButton>
 	</Stack>
-    <Typography sx={{fontSize:12, fontFamily: "glegoo"}}>Copyright @ 2023 Alpha Kappa Psi Rho Psi. All Rights Reserved. </Typography>
+    <Stack spacing={1}>
+        <Typography sx={{fontSize:12, fontFamily: "glegoo"}}>Copyright @ 2023 Alpha Kappa Psi Rho Psi. All Rights Reserved. </Typography>
+        <Typography sx={{fontSize:12, fontFamily: "glegoo"}}>Site by Anthony Sky Ng-Thow Hing & Liwen Tran </Typography>
+    </Stack>
 	</Stack>
 );
 };
