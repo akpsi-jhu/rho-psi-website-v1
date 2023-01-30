@@ -23,7 +23,7 @@ const Recruitment = () => {
         <Stack alignItems='center' overflow='hidden'>
 
             <Navbar blue={true}></Navbar>
-            <Stack marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 5, md: 5, lg: 20, xl: 30}} maxWidth={1920} spacing={6} >
+            <Stack marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 10, md: 20, lg: 30, xl: 40}} maxWidth={1920} spacing={6} >
 
             <Title wrap={true} header="Spring Rush 2023" body="Recruitment begins the second week of February, from 2/8 - 2/18.
 Follow our Instagram page for the latest updates: @akpsi_jhu and sign up below!"></Title>

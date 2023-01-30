@@ -19,7 +19,7 @@ const Contact = () => {
         <Stack alignItems='center' overflow='hidden'>
 
             <Navbar blue={true}></Navbar>
-            <Stack marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 5, md: 5, lg: 20, xl: 30}} maxWidth={1920} spacing={6} >
+            <Stack marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 10, md: 20, lg: 30, xl: 40}} maxWidth={1920} spacing={6} >
             <Title wrap={false} header="Contact Us" body="Questions? Fill out the form below and we will respond to you via email as soon as possible.
 You may also reach us directly at akpsi@gmail.com or via Instagram @akpsi_jhu! We look forward to hearing from you."></Title>
             <EmailForm></EmailForm>

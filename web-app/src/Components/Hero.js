@@ -35,19 +35,19 @@ const Hero = () => {
 			}}>
 				
 				<Stack spacing={2} sx = {{
-                    marginBottom: 26,
+                    marginBottom: 22,
                     marginLeft: {xs: 4, sm: 4, md: 5, lg: 10, xl: 20}
 
                 }}>
                     <Stack spacing={.5} sx = {{ }}>
-                        <Typography variant='h3' fontSize={{xs: 40, sm: 40, md: 50, lg: 50, xl: 50}}
+                        <Typography variant='h3' fontSize={{xs: '8vw', sm: 40, md: 50, lg: 50, xl: 50}}
                         color='white' fontFamily={"glegoo"} >
                         ALPHA KAPPA PSI at
                         </Typography>
                         <Typography
                             fontFamily={"glegoo"}
                             variant='h4'
-                            fontSize={{xs: 30, sm: 30, md: 37, lg: 37, xl: 37}}
+                            fontSize={{xs: '6vw', sm: 30, md: 37, lg: 37, xl: 37}}
                             color='white'
                             >
                                 Johns Hopkins University
@@ -56,9 +56,9 @@ const Hero = () => {
 						<Button
 							onClick={navigateNext}
 							variant='outlined'
-							sx={{  width: {md: 450, xs: 380}, fontSize: 20, padding: 1, color: 'white', borderColor: 'white', borderRadius: 85, fontFamily: "Iceland", boxShadow: 3
+							sx={{  width: {xs: '80vw', sm: 450, md: 450}, fontSize: 20, padding: 1, color: 'white', borderColor: 'white', borderRadius: 85, fontFamily: "Iceland", boxShadow: 3
                         }}>
-							SPRING 2023 RUSH: COMING SOON
+							SPRING 2023 RUSH
 						</Button>
 				</Stack>
 		</Box>

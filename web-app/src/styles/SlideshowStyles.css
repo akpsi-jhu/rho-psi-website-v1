@@ -1,5 +1,6 @@
 .slide-container {
     overflow: hidden;
+    
 
   }
   
@@ -7,6 +8,8 @@
   .each-fade {
     align-self: flex-end;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     
   }
@@ -14,6 +17,7 @@
   .image-container {
     border-radius: 50px;
     overflow: hidden;
+    
 
 
 
@@ -22,7 +26,10 @@
   
   .each-fade > div img {
     border-radius: 50px;
-    height: 500px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+
 
 
   }

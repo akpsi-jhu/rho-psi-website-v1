@@ -24,7 +24,7 @@ const Title = (props) => {
                 borderBottomWidth: 3
             }}></Divider>
             <Typography variant="h6" sx = {{
-                 fontSize: {xs: 16, md: 16, lg: 18, xl: 18},
+                 fontSize: {xs: 16, md: 16, lg: 16, xl: 16},
             }}>{props.body}</Typography>
         </Stack>
 	);
