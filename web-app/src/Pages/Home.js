@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Stack, Box, Typography, makeStyles } from "@mui/material";
+import { Stack, Box} from "@mui/material";
 import Hero from "../Components/Hero"
 import Navbar from "../Components/Navbar/Navbar"
 import hero from "../assets/city.png";
