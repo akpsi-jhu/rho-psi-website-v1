@@ -31,13 +31,13 @@ const RushMessage = () => {
                 <Typography variant="h7"  fontFamily="" lineHeight={1.5}  fontSize={{xs: 16, md: 16, lg: 16}} fontWeight={400}>I'm Dylan Shin, the other rush chair, and I'm a junior majoring in mol-cell bio and economics. I am so glad I rushed AKPsi because I got to join such a tight knit and uplifting community where everyone feels welcome. I've made so many great memories with wonderful people in AKPsi. </Typography>
                 <Typography variant="h7"   fontFamily="" lineHeight={1.5}  fontSize={{xs: 16, md: 16, lg: 16}} fontWeight={400}>Our first and foremost advice for rush is to be yourself! Dont be shy to meet new people and make meaningful connections. Try to learn about all the awesome experiences our brothers have gotten from AKPsi. Get the most out of rush, and put yourself out their to find out what makes you excited about the brotherhood! We are so so excited to meet you all, so Lights, Cameras, Rush!</Typography>
             </Stack>
-            <Button
-                                variant="contained"
-                                sx={{ width: '100%', fontSize: 20, padding: 1, backgroundColor: '#0C406F', borderRadius: 85, boxShadow: 3
-                            }}>
-                                Sign up for Rush
+                <Button href={"https://docs.google.com/forms/d/e/1FAIpQLSfSrCZp3rTzyWZFnpeAhtWYzbDcikA5V4FEle__n0hkJon0fw/viewform"} target={"_blank"}
+                        variant="contained"
+                        sx={{ width: '100%', fontSize: 20, padding: 1, backgroundColor: '#0C406F', borderRadius: 85, boxShadow: 3
+                        }}>
+                    Sign up for Rush
 
-            </Button>
+                </Button>
             </Stack>
             <ImageSlideshow></ImageSlideshow>
         </Stack>

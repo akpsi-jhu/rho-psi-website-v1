@@ -28,7 +28,7 @@ const Contact = () => {
         <SideBar  isOpen={isOpen} toggle={toggle}/>              
         <Stack marginY={{xs: 15, md:20}} overflow='hidden' paddingX={{xs: 5, sm: 10, md: 20, lg: 30, xl: 40}} maxWidth={1920} spacing={6} >
             <Title wrap={false} header="Contact Us" body="Questions? Fill out the form below and we will respond to you via email as soon as possible.
-You may also reach us directly at akpsi@gmail.com or via Instagram @akpsi_jhu! We look forward to hearing from you."></Title>
+You may also reach us directly at akpsijhu@gmail.com or or via Instagram @akpsi_jhu. We look forward to hearing from you!"></Title>
             <EmailForm></EmailForm>
             </Stack>
             <Footer/>
