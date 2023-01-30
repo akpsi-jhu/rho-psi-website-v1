@@ -1,20 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Stack, Box, Typography, makeStyles } from "@mui/material";
 import Hero from "../Components/Hero"
-import Navbar from "../Components/Navbar"
+import Navbar from "../Components/Navbar/Navbar"
 import hero from "../assets/city.png";
 import About from "../Components/About"
 import Rush from "../Components/Rush"
 import Logos from "../Components/Logos";
 import Footer from "../Components/Footer";
-import { maxWidth } from "@mui/system";
+import SideBar from "../Components/Sidebar/Sidebar";
+
+
 
 
 
 //fontSize={{xs: 24, md: 30, lg: 40, xl: 42}}
 const Home = () => {
+
+        const [isOpen, setIsOpen] = useState(false);
+        const toggle = () => {
+                setIsOpen(!isOpen)
+            }
+
+        
 	return (
+
         <Stack alignItems='center' overflow='hidden'>
+
             <Box sx = {{
                     height: "100vh",
                     width: "100vw",
@@ -26,13 +37,19 @@ const Home = () => {
                     overflowY: "hidden",
                     overflowX: "hidden",
                     position: "relative",
-                    display: "flex",
-                    justifyContent: "center"
+                    justifyContent: "center",
+                    display: "flex"
+
+
 
             }}>
-            <Hero></Hero>     
-            <Navbar blue={false}></Navbar>
+
+            <Hero></Hero>   
+            <Navbar toggle={toggle} blue={false}></Navbar>
+           <SideBar  isOpen={isOpen} toggle={toggle}/>  
+
             </Box>
+
             <Box marginY={10} overflow='hidden' paddingX={{xs: 5, sm: 10, md: 20, lg: 30, xl: 40}} maxWidth={1920} >
             <About></About>
             </Box>
@@ -41,11 +58,8 @@ const Home = () => {
             <Rush></Rush>
             </Box>
             <Footer/>
-
-
-
-
         </Stack>
+
 	);
 };
 

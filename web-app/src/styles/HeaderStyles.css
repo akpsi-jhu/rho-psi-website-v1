@@ -1,8 +1,9 @@
 .navigation-menu {
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
   }
   .navigation-menu li {
     margin: 0px 20px;

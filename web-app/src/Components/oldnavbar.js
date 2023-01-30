@@ -29,7 +29,7 @@ const Navbar = (props) => {
         component="div"
         sx={{ flexGrow: 1, my: 2, }}
       >
-        AKP
+        AKΨ
       </Typography>
       <Divider />
       <ul className="mobile-navigation">
@@ -106,7 +106,7 @@ const Navbar = (props) => {
             </IconButton>
           </Toolbar>
         </AppBar>
-        <Box component="nav">
+        <Box component="nav" >
           <Drawer
             variant="temporary"
             open={mobileOpen}
@@ -115,7 +115,8 @@ const Navbar = (props) => {
               display: { xs: "block", sm: "none" },
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
-                width: "240px",
+                alignItems: "left",
+                width: "100%",
               },
             }}
           >

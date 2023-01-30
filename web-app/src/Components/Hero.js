@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import {Grid, Typography, Button, Box, Stack, ThemeProvider, useTheme} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Components/Navbar/Navbar"
+
 
 const Img = styled("img")({
 	margin: "auto",
@@ -10,6 +12,11 @@ const Img = styled("img")({
 });
 
 const Hero = () => {
+
+	const [isOpen, setIsOpen] = useState(false);
+	const toggle = () => {
+			setIsOpen(!isOpen)
+		}
 	const navigate = useNavigate();
 
 	const navigateNext = () => {
@@ -33,6 +40,7 @@ const Hero = () => {
 				width: "100vw",
 				maxWidth: 1920,
 			}}>
+
 				
 				<Stack spacing={2} sx = {{
                     marginBottom: 22,
