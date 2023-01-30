@@ -14,7 +14,8 @@ import recruitment from "../assets/lightscamerarush.png";
 import Faq from "../Components/Faq"
 import TagHeader from "../Components/TagHeader";
 import SideBar from "../Components/Sidebar/Sidebar";
-
+import "../styles/Image.css";
+import rushChairIMG from "../assets/rushchairs.jpeg";
 
 
 
@@ -26,17 +27,19 @@ const Recruitment = () => {
             setIsOpen(!isOpen)
         }
 	return (
-        <Stack alignItems='center' overflow='hidden'>
+        <Stack alignItems='center' overflow='hidden' >
 
             <Navbar toggle={toggle} blue={true}></Navbar>
-           <SideBar  isOpen={isOpen} toggle={toggle}/>  
+           <SideBar  isOpen={isOpen} toggle={toggle}/>
             <Stack marginY={{xs: 15, md:20}}  overflow='hidden' paddingX={{xs: 5, sm: 10, md: 20, lg: 30, xl: 40}} maxWidth={1920} spacing={6} >
 
             <Title wrap={true} header="Spring Rush 2023" body="Recruitment begins the second week of February, from 2/8 - 2/18.
 Follow our Instagram page for the latest updates: @akpsi_jhu and sign up below!"></Title>
                 <TagHeader text="Schedule" ></TagHeader>
-                <img src={recruitment} alt={"Spring rush"}  style={{width: '100%', objectFit: 'cover', height: 'auto'}}/>
-            <RushMessage></RushMessage>
+                <Box className="container">
+                    <img className="container" src={recruitment} alt=""/>
+                </Box>
+            <RushMessage ></RushMessage>
             <Faq></Faq>
             </Stack>
             <Footer/>

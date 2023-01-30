@@ -10,6 +10,7 @@ import groupImg from "../assets/group.png";
 
 import socialIMG from "../assets/social.png";
 import ImageSlideshow from "./ImageSlideshow";
+import ImageBox from "./ImageBox";
 
 
 
@@ -20,7 +21,7 @@ const Rush = () => {
         <Stack spacing = {3}  >
             <TagHeader text="Recruitment" ></TagHeader>
             <Typography variant="h3" textAlign="left">Rush AKPSI</Typography>
-        <Stack direction={{ xs: 'column-reverse', md: 'row' }} display="flex"  spacing = {{ xs: 3, md: 5}}>
+        <Stack direction={{ xs: 'column-reverse', md: 'row' }} overflow='hidden' display="flex"  spacing = {2}>
             <Stack spacing={4} textAlign="left">
             <Stack spacing={3} textAlign="left" >
                 <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}} fontWeight={400}>Alpha Kappa Psi is the oldest and largest professional business fraternity with more than 160,000 initiated members world-wide at 265 active chapters. Recognized as the premier developer of principled business leaders, AKPsi prides itself on sending driven and inspiring members into the professional sphere.</Typography>
@@ -35,7 +36,7 @@ const Rush = () => {
 
             </Button>
             </Stack>
-            <ImageSlideshow></ImageSlideshow>
+            <ImageBox src={brotherhoodIMG}/>
         </Stack>
 
         </Stack>
