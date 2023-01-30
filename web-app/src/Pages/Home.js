@@ -31,7 +31,7 @@ const Home = () => {
                     width: "100vw",
                     minHeight: "600px",
                     backgroundImage: `url(${hero})`,
-                    backgroundAttachment: "fixed",
+                    backgroundAttachment: {xs: "scroll", md: "scroll", lg: "fixed", xl: "fixed"},
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     overflowY: "hidden",
