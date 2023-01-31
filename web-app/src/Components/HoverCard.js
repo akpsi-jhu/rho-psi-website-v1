@@ -14,13 +14,16 @@ const HoverCard = ({ body, image, title }) => {
     }} >
       <Stack className="card__content">
         <h4 className="card__title">{title}</h4>
-        <Typography fontSize={14} className="card__body">{body} </Typography>
+        <Typography fontSize={14} lineHeight={1.2} className="card__body">{body} </Typography>
         <Stack direction="row" alignSelf="flex-end" >
             <NavLinkR
                       to="/brothers"
                 // smooth={true} duration={500} spy={true} exact='true' offset={-80}
             >
-            <button className="card__button">Meet the brothers
+            <button className="card__button">
+              <Typography fontSize={14} lineHeight={1.2} whiteSpace="nowrap">
+              Meet the brothers
+              </Typography>
             <ArrowForwardIosOutlinedIcon sx = {{
                 fontSize: 15,
             }}></ArrowForwardIosOutlinedIcon>

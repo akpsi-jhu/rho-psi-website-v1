@@ -22,12 +22,12 @@ const About = () => {
                 <HoverCard
                 image={brotherhoodIMG}
                 title= "Brotherhood"
-                body="Our brotherhood is comprised of 71 members with diverse backgrounds, collectively studying over 20 different majors. Brothers hail from various countries worldwide, including Brazil, Morocco, and Australia."
+                body="Our brotherhood has 71 members from diverse backgrounds and 20 majors, hailing from countries including Brazil, Morocco, and Australia."
                 ></HoverCard>
                                 <HoverCard
                 image={professionalIMG}
                 title= "Professionalism"
-                body="From pledge projects, a mentorship program, professional development resources, to access to an extensive alumni network, we set brothers up for a lifetime of success."
+                body="From pledge projects, mentorship programs, professional development resources, to an extensive alumni network, we set brothers up for lifelong success."
                 ></HoverCard>
                                 <HoverCard
                 image={socialIMG}
