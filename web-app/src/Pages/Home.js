@@ -24,7 +24,7 @@ const Home = () => {
         
 	return (
 
-        <Stack alignItems='center' overflow='hidden'>
+        <Stack alignItems='center' overflow='hidden' >
 
             <Box sx = {{
                     height: "100vh",

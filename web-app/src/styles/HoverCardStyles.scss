@@ -26,6 +26,11 @@
         --padding: 0.1rem 1.5rem 1.5rem;
         background: var(--blue-color);
         padding: var(--padding);
+        height: 250px;
+        @media screen and (max-width: 960px) {
+          height: 225px;
+        }
+
       }
   
       &__title {
@@ -42,7 +47,7 @@
       
       &__button {
         align-items: center;
-        margin-top: -5px;
+        margin-top: 7px;
         gap: 10px;
         background: none;
         border-style: none;
