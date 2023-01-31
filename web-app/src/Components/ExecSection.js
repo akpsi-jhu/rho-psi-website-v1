@@ -4,13 +4,16 @@ import {Grid, Typography} from "@mui/material";
 import Title from "./Title";
 import React from "react";
 
-const PcSection = (props) => {
+const ExecSection = (props) => {
     const {brothers, pc} = props;
     let pcBrothers = brothers.filter(brother => {
-        return brother.pledgeClass == pc;
+        return brother.exec === true;
     })
 
-   // console.log(pcBrothers)
+    // sort by position name
+    pcBrothers = pcBrothers.sort((a, b) => {
+        return a.position.localeCompare(b.position)});
+
     return (
         <Stack
             direction="column"
@@ -18,14 +21,16 @@ const PcSection = (props) => {
             alignItems="center"
             py = {8}
         >
-            <Typography variant="h4" marginBottom={3} py={4}>{pc}</Typography>
+            <Typography variant="h4" marginBottom={3} py={4}>Executive Board</Typography>
             <Box>
-                <Grid container justifyContent="center" spacing={{ xs: 1, md: 2 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
+                <Grid justifyContent="center" container spacing={{ xs: 1, md: 2 }} columns={{ xs: 4, sm: 9, md: 20, lg: 20}}>
                     {pcBrothers.map((brother, index) => (
-                        <Grid item xs={2} sm={4} md={4} lg={4} key={index}>
+                        <Grid item xs={2} sm={3} md={4} lg={4} key={index}>
                             <BrotherCard
                                 brother={brother}
                                 key={index}
+                                display={"position"}
+                                year = {false}
                             ></BrotherCard>
                         </Grid>
                     ))}
@@ -35,4 +40,4 @@ const PcSection = (props) => {
     );
 };
 
-export default PcSection;
+export default ExecSection;

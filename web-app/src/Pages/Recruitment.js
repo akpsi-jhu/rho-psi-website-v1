@@ -33,8 +33,8 @@ const Recruitment = () => {
            <SideBar  isOpen={isOpen} toggle={toggle}/>
             <Stack marginY={{xs: 15, md:20}}  overflow='hidden' paddingX={{xs: 5, sm: 10, md: 20, lg: 30, xl: 40}} maxWidth={1920} spacing={6} >
 
-            <Title wrap={true} header="Spring Rush 2023" body="Recruitment begins the second week of February, from 2/8 - 2/18.
-Follow our Instagram page for the latest updates: @akpsi_jhu and sign up below!"></Title>
+            <Title wrap={true} header="Spring Rush 2023" body="Recruitment begins the second week of February, from Monday 2/6 - 2/18.
+Follow our Instagram page for the latest updates @akpsi_jhu and sign up below!"></Title>
                 <TagHeader text="Schedule" ></TagHeader>
                 <Box className="container">
                     <img className="container" src={recruitment} alt=""/>

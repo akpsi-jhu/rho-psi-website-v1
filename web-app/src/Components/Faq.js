@@ -31,7 +31,7 @@ const FAQ = () => {
     },
     {
       question: 'What are pledge projects?',
-      answer: 'The Pledge Projects give our new members a unique opportunity to gain valuable insight in one of the four areas of business: finance, consulting, entrepreneurship, and marketing. Lead by experienced brothers, the projects teach you necessary professional skills such as time management, public speaking, organizational skills, and communication.',
+      answer: 'The Pledge Projects give our new members a unique opportunity to gain valuable insight in one of the four areas of business: finance, consulting, entrepreneurship, and marketing. Led by experienced brothers, the projects teach you necessary professional skills such as time management, public speaking, organizational skills, and communication.',
     },
     {
       question: 'Where are some of our alumni?',
