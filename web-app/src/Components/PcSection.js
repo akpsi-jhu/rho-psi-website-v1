@@ -20,7 +20,7 @@ const PcSection = (props) => {
         >
             <Typography variant="h4" marginBottom={3} py={4}>{pc}</Typography>
             <Box>
-                <Grid container spacing={{ xs: 0, md: 2 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
+                <Grid container spacing={{ xs: 1, md: 2 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16}}>
                     {pcBrothers.map((brother, index) => (
                         <Grid item xs={2} sm={4} md={4} lg={4} key={index}>
                             <BrotherCard

@@ -4,7 +4,7 @@ const BrotherCard = (props) => {
     const {brother, key} = props;
     return (
         <Card sx = {{boxShadow: "none"}}>
-            <CardMedia sx={{ height: 300, width: "115%"  }} component="img" image={brother.imageUrl}/>
+            <CardMedia sx={{ height: 300, width: "100%", padding: 0 }} component="img" image={brother.imageUrl}/>
             <CardContent>
                 <div>
                     <Typography sx ={{ fontWeight: "bold", display: 'inline-block'}} variant="body">
