@@ -38,15 +38,15 @@ const Home = () => {
                     overflowX: "hidden",
                     position: "relative",
                     justifyContent: "center",
-                    display: "flex"
+                    display: "flex",
 
 
 
             }}>
 
             <Hero></Hero>   
+            <SideBar  isOpen={isOpen} toggle={toggle}/>  
             <Navbar toggle={toggle} blue={false}></Navbar>
-           <SideBar  isOpen={isOpen} toggle={toggle}/>  
 
             </Box>
 

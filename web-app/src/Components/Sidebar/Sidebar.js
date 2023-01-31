@@ -1,10 +1,9 @@
+import { Box } from "@mui/system";
 import React from "react";
 
 import {
   SidebarContainer,
   SidebarWrapper,
-  SideBtnWrap,
-  SidebarRoute,
   Icon,
   CloseIcon,
   SidebarMenu,
