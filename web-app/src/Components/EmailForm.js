@@ -63,7 +63,7 @@ export default function ContactForm() {
 
     // Send the email
     //using a simple mailto link 
-    const emailLink = `mailto:skyngthowhing@gmail.com?subject=Contact Form Submission&body=Name: ${firstName} ${lastName}{%0AEmail: ${email}%0AMessage: ${message}`;
+    const emailLink = `mailto:akpsijhu@gmail.com?subject=Contact Form Submission&body=Name: ${firstName} ${lastName}{%0AEmail: ${email}%0AMessage: ${message}`;
     window.location.href = emailLink;
 
     // Reset the form
