@@ -8,6 +8,7 @@ import Rush from "../Components/Rush"
 import Logos from "../Components/Logos";
 import Footer from "../Components/Footer";
 import SideBar from "../Components/Sidebar/Sidebar";
+import AlertBar from "../Components/AlertBar";
 
 
 
@@ -25,6 +26,7 @@ const Home = () => {
 	return (
 
         <Stack alignItems='center' overflow='hidden' >
+            <AlertBar/>
 
             <Box sx = {{
                     height: "100vh",
