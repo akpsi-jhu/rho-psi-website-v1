@@ -7,7 +7,7 @@ import socialIMG from "../assets/prof.png";
 import groupIMG from "../assets/group.png";
 import { Box } from "@mui/system";
 
-//slideshot
+
 export default function ImageSlideshow() {
   const fadeImages = [
     brotherhoodIMG, professionalIMG, socialIMG, groupIMG
