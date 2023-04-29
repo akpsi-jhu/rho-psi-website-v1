@@ -26,7 +26,7 @@ const Home = () => {
 	return (
 
         <Stack alignItems='center' overflow='hidden' >
-            <AlertBar/>
+            {/* <AlertBar/> */}
 
             <Box sx = {{
                     height: "100vh",

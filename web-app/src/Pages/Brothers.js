@@ -21,7 +21,7 @@ const Home = () => {
 
     const api = new BrotherApi();
 
-    const pcNames = ["Alpha Lambda", "Alpha Mu", "Alpha Nu", "Alpha Xi", "Alpha Omicron", "Alpha Pi"]
+    const pcNames = ["Alpha Lambda", "Alpha Mu", "Alpha Nu", "Alpha Xi", "Alpha Omicron", "Alpha Pi", "Alpha Rho"]
 
     // const pcNames = ["Alpha Xi"]
     const [brothers, setBrothers] = useState([]);
