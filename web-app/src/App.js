@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route, BrowserRouter} from "react-router-dom";
+import {Routes, Route, HashRouter} from "react-router-dom";
 import Home from "./Pages/Home"
 import Contact from "./Pages/Contact"
 import Recruitment from './Pages/Recruitment';
@@ -10,14 +10,14 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
         <div className="App">
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
                     <Route path='/' element={<Home/>}></Route>
                     <Route path='/contact' element={<Contact/>}></Route>
                     <Route path='/recruitment' element={<Recruitment/>}></Route>
                     <Route path='/brothers' element={<Brothers/>}></Route>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
         </ThemeProvider>
     );

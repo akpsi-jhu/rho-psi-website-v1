@@ -15,7 +15,7 @@ import Faq from "../Components/Faq"
 import TagHeader from "../Components/TagHeader";
 import SideBar from "../Components/Sidebar/Sidebar";
 import "../styles/Image.css";
-import rushChairIMG from "../assets/rushchairs.jpeg";
+import rushChairIMG from "../assets/rushChairsFall2023.jpg";
 
 
 

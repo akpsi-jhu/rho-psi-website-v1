@@ -6,7 +6,7 @@ import Title from "../Components/Title"
 import HoverCard from "./HoverCard"
 import professionalIMG from "../assets/prof.png";
 import groupImg from "../assets/group.png";
-import rushChairIMG from "../assets/rushchairs.jpeg";
+import rushChairIMG from "../assets/rushChairsFall2023.jpg";
 
 
 
@@ -59,7 +59,7 @@ const RushMessage = () => {
                             meet you all, so Lights, Cameras, Rush!</Typography>
                     </Stack>
                     <Button
-                        href={"https://forms.gle/GwUL8q4f918FyePPA"}
+                        href={"https://docs.google.com/forms/d/e/1FAIpQLScylHH9lcGaWcc3XOflA8FTFPPbWITYjS1LvxbtS6RPFYmGxQ/viewform"}
                         target={"_blank"}
                         variant="contained"
                         sx={{
