@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.66305ce2.css",
-    "main.js": "/static/js/main.0f2fd675.js",
+    "main.js": "/static/js/main.73ac6549.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/city.png": "/static/media/city.bdad29d412c59a40601c.png",
-    "static/media/rushchairs.jpeg": "/static/media/rushchairs.c4dd2af3bfcf667a201c.jpeg",
+    "static/media/rushChairsFall2023.jpg": "/static/media/rushChairsFall2023.0758067846febe6b9205.jpg",
     "static/media/group.png": "/static/media/group.58a2a4018765832da3e6.png",
     "static/media/social.png": "/static/media/social.87502cef16875efd17c2.png",
     "static/media/prof.png": "/static/media/prof.175a9844347960443d62.png",
@@ -30,11 +30,11 @@
     "static/media/jpm.png": "/static/media/jpm.85a43bc80573bc268fb8.png",
     "index.html": "/index.html",
     "main.66305ce2.css.map": "/static/css/main.66305ce2.css.map",
-    "main.0f2fd675.js.map": "/static/js/main.0f2fd675.js.map",
+    "main.73ac6549.js.map": "/static/js/main.73ac6549.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66305ce2.css",
-    "static/js/main.0f2fd675.js"
+    "static/js/main.73ac6549.js"
   ]
 }
