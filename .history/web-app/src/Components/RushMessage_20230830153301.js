@@ -59,7 +59,7 @@ const RushMessage = () => {
                             meet you all, so Lights, Cameras, Rush!</Typography>
                     </Stack>
                     <Button
-                        href={"https://docs.google.com/forms/d/e/1FAIpQLScylHH9lcGaWcc3XOflA8FTFPPbWITYjS1LvxbtS6RPFYmGxQ/viewform"}
+                        href={"https://forms.gle/GwUL8q4f918FyePPA"}
                         target={"_blank"}
                         variant="contained"
                         sx={{

@@ -41,22 +41,23 @@ const RushMessage = () => {
                 <Stack height="100%" spacing={4} textAlign="left">
                     <Stack spacing={3} textAlign="left">
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
-                                    fontWeight={400}>My name is Sneha Raj and I’m one of the rush chairs for Spring
-                            2023. I’m a sophomore majoring in biomedical engineering originally from San Jose,
-                            California. Outside of AKPsi, I'm involved with Shakti and the MedTech Network. I am
-                            extremely grateful for the community I found in AKPsi. It's where I've made so many
-                            wonderful friendships, and I'm constantly learning from the people around me.</Typography>
+                                    fontWeight={400}>I'm Avery Kuo, one of the rush chairs, and I'm a sophomore from Pleasanton, California majoring in Computer Science and Neuroscience. 
+                                    I’m really happy that I rushed AKPsi because I’m now a part of such a welcoming and close-knit community. 
+                                    Through AKPsi, I’ve been able to meet so many new people, leading to genuine friendships and lasting memories!</Typography>
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
-                                    fontWeight={400}>I'm Dylan Shin, the other rush chair, and I'm a junior majoring in
-                            mol-cell bio and economics. I am so glad I rushed AKPsi because I got to join such a tight
-                            knit and uplifting community where everyone feels welcome. I've made so many great memories
-                            with wonderful people in AKPsi. </Typography>
+                                    fontWeight={400}>My name is Vaishnavi Pinni, one of the rush chairs, and I’m a junior from St. Louis, Missouri studying Biomedical Engineering.
+                                     I joined AKPsi because of all of the genuine and amazing people I met during rush. Every brother is incredibly supportive and always down to help out in whatever ways they can. 
+                                     Rushing AKPsi was one of the best decisions i made at Hopkins and I’ve made lifelong friends through the fraternity!!</Typography>
+                        <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
+                                    fontWeight={400}>Hi! I’m Katherine Forbes, one of the rush chairs, and I'm a junior from The Woodlands, Texas majoring in Computer Science. 
+                                    By joining AKPSI, I’ve made so many fond memories and became friends with so many people that I otherwise would never have gotten to meet. 
+                                    I’m so glad that I made the decision to rush when I got to Hopkins, and I’m excited to get to know everyone joining this semester!</Typography>
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
                                     fontWeight={400}>Our first and foremost advice for rush is to be yourself! Dont be
                             shy to meet new people and make meaningful connections. Try to learn about all the awesome
                             experiences our brothers have gotten from AKPsi. Get the most out of rush, and put yourself
                             out their to find out what makes you excited about the brotherhood! We are so so excited to
-                            meet you all, so Lights, Cameras, Rush!</Typography>
+                            meet you all!</Typography>
                     </Stack>
                     <Button
                         href={"https://docs.google.com/forms/d/e/1FAIpQLScylHH9lcGaWcc3XOflA8FTFPPbWITYjS1LvxbtS6RPFYmGxQ/viewform"}

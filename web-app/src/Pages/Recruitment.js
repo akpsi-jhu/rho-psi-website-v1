@@ -10,7 +10,7 @@ import Footer from "../Components/Footer";
 import { maxWidth } from "@mui/system";
 import Title from "../Components/Title";
 import EmailForm from "../Components/EmailForm";
-import recruitment from "../assets/lightscamerarush.png";
+import recruitment from "../assets/F23Rushbanner.png";
 import Faq from "../Components/Faq"
 import TagHeader from "../Components/TagHeader";
 import SideBar from "../Components/Sidebar/Sidebar";
@@ -34,10 +34,10 @@ const Recruitment = () => {
             <Stack marginY={{xs: 15, md:20}}  overflow='hidden' paddingX={{xs: 5, sm: 10, md: 20, lg: 30, xl: 40}} maxWidth={1920} spacing={6} >
 
             <Title wrap={true} header="Rush" body="Occurs at the start of every semester. Follow our Instagram page for the latest updates @akpsi_jhu and sign up below!"></Title>
-                {/* <TagHeader text="Schedule" ></TagHeader>
+                <TagHeader text="Schedule" ></TagHeader>
                 <Box className="container">
                     <img className="container" src={recruitment} alt=""/>
-                </Box> */}
+                </Box>
             <RushMessage ></RushMessage>
             <Faq></Faq>
             </Stack>
