@@ -29,7 +29,7 @@ const ActivePortalLogin = () => {
     <Stack alignItems='center' sx={{ minHeight: '100vh', justifyContent: 'space-between' }}> {/* Adjusted for sticky footer */}
       <Navbar toggle={toggle} blue={true}></Navbar>
       <SideBar isOpen={isOpen} toggle={toggle}/>              
-      <Box sx={{ width: '100%', maxWidth: 500, mt: 8, mb: 8, marginTop: 20 }}>
+      <Box sx={{ width: '100%', maxWidth: 500, mt: 8, mb: 8 }}>
         <Typography component="h1" variant="h5">
           Login to Active Portal
         </Typography>
@@ -58,7 +58,7 @@ const ActivePortalLogin = () => {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2, bgcolor: '#0C406F'}} // Custom color
+            sx={{ mt: 3, mb: 2, bgcolor: '#1F282C'}} // Custom color
           >
             Login
           </Button>

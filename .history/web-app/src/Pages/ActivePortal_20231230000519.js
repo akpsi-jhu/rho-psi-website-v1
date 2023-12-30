@@ -20,7 +20,7 @@ const ActivePortal = () => {
     <Stack sx={{ minHeight: '100vh', justifyContent: 'space-between' }}>
       <Navbar toggle={toggle} blue={true}></Navbar>
       <SideBar isOpen={isOpen} toggle={toggle}/>  
-      <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 8, marginTop: 20 }}>
+      <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 8 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Welcome to the Active Portal
         </Typography>

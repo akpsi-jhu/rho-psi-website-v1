@@ -1,35 +1,35 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../Auth/AuthContext';
-import { TextField, Button, Stack, Typography, Box } from '@mui/material';
-import Navbar from "../Components/Navbar/Navbar";
+import { AuthContext } from '../Auth/AuthContext'; // Import AuthContext
+import { TextField, Button, Container, Typography, Box } from '@mui/material';
+import Navbar from "../Components/Navbar/Navbar"
 import Footer from "../Components/Footer";
 import SideBar from "../Components/Sidebar/Sidebar";
 
 const ActivePortalLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { setAuthenticated } = useContext(AuthContext);
-  const navigate = useNavigate();
-  const fixedPassword = 'akpsi123';
+  const { setAuthenticated } = useContext(AuthContext); // Use AuthContext for authentication state
+  const navigate = useNavigate(); // For redirection after login
+  const fixedPassword = 'akpsi123'; // Replace with your fixed password
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-
+  const toggle = () => {
+          setIsOpen(!isOpen)
+      }
   const handleLogin = async (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default form submission behavior
     if (password === fixedPassword) {
       setAuthenticated(true);
-      navigate('/activeportal');
+      navigate('/activeportal'); // Redirect to the portal after successful login
     } else {
       alert('Invalid credentials');
     }
   };
 
   return (
-    <Stack alignItems='center' sx={{ minHeight: '100vh', justifyContent: 'space-between' }}> {/* Adjusted for sticky footer */}
-      <Navbar toggle={toggle} blue={true}></Navbar>
-      <SideBar isOpen={isOpen} toggle={toggle}/>              
-      <Box sx={{ width: '100%', maxWidth: 500, mt: 8, mb: 8, marginTop: 20 }}>
+    <Stack alignItems='center' overflow='hidden'>
+    <Navbar toggle={toggle} blue={true}></Navbar>
+      <Box sx={{ marginTop: 8, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Typography component="h1" variant="h5">
           Login to Active Portal
         </Typography>
@@ -58,14 +58,13 @@ const ActivePortalLogin = () => {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2, bgcolor: '#0C406F'}} // Custom color
+            sx={{ mt: 3, mb: 2 }}
           >
             Login
           </Button>
         </Box>
       </Box>
-      <Footer></Footer>
-    </Stack>
+    </Container>
   );
 };
 

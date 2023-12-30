@@ -58,7 +58,7 @@ const ActivePortalLogin = () => {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2, bgcolor: '#0C406F'}} // Custom color
+            sx={{ mt: 3, mb: 2}} // Custom color
           >
             Login
           </Button>
