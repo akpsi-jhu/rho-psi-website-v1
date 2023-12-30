@@ -73,6 +73,9 @@ const Navbar = ({ toggle, blue }) => {
             <NavItem>
               <NavLinkR blue={blue} to="/contact">Contact</NavLinkR>
             </NavItem>
+            <NavItem>
+              <NavLinkR blue={blue} to="/activePortal">Active Portal</NavLinkR>
+            </NavItem>
           </NavMenu>
         </NavbarContainer>
       </Nav>
