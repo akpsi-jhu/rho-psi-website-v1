@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../Auth/AuthContext'; // Import AuthContext
 import { Box, Container, Typography, Button } from '@mui/material';
 
-const ActivePortal = ({ setAuth }) => {
+const ActivePortal = () => {
+  const { setAuthenticated } = useContext(AuthContext); // Use AuthContext for authentication state
+  const navigate = useNavigate(); // For redirection after logout
+
   const handleLogout = () => {
-    // Logout logic here
-    setAuth(false);
+    setAuthenticated(false); // Update authentication state
+    navigate('/login'); // Redirect to login after logout
   };
 
   return (

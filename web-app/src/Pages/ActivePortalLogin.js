@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-// import { firebaseDb } from './firebase-config'; // Import your firebase configuration
+import React, { useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../Auth/AuthContext'; // Import AuthContext
 import { TextField, Button, Container, Typography, Box } from '@mui/material';
 
-const ActivePortalLogin = ({ setAuth }) => {
+const ActivePortalLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const fixedPassword = 'yourFixedPassword'; // Replace with your fixed password
+  const { setAuthenticated } = useContext(AuthContext); // Use AuthContext for authentication state
+  const navigate = useNavigate(); // For redirection after login
+  const fixedPassword = 'akpsi123'; // Replace with your fixed password
 
-//   const handleLogin = async () => {
-//     try {
-//       const snapshot = await firebaseDb.ref('authorizedEmails').child(email.replace('.', ',')).once('value');
-//       if (snapshot.exists() && password === fixedPassword) {
-//         setAuth(true);
-//       } else {
-//         alert('Invalid credentials');
-//       }
-//     } catch (error) {
-//       console.error('Login Error:', error);
-//     }
-//   };
+  const handleLogin = async (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+    if (password === fixedPassword) {
+      setAuthenticated(true);
+      navigate('/activeportal'); // Redirect to the portal after successful login
+    } else {
+      alert('Invalid credentials');
+    }
+  };
 
   return (
     <Container maxWidth="xs">
@@ -26,7 +26,7 @@ const ActivePortalLogin = ({ setAuth }) => {
         <Typography component="h1" variant="h5">
           Login to Active Portal
         </Typography>
-        <Box component="form"  noValidate sx={{ mt: 1 }}>
+        <Box component="form" onSubmit={handleLogin} noValidate sx={{ mt: 1 }}>
           <TextField
             margin="normal"
             required
