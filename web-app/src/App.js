@@ -4,22 +4,31 @@ import Home from "./Pages/Home"
 import Contact from "./Pages/Contact"
 import Recruitment from './Pages/Recruitment';
 import Brothers from './Pages/Brothers';
+import ActivePortal from './Pages/ActivePortal';
+import ActivePortalLogin from './Pages/ActivePortalLogin';
 import {createTheme, ThemeProvider} from "@mui/material";
+import { AuthProvider } from './Auth/AuthContext'; // Import AuthProvider
+import ProtectedRoute from './Auth/ProtectedRoute'; // Import ProtectedRoute
 
 function App() {
     return (
-        <ThemeProvider theme={theme}>
-        <div className="App">
-            <HashRouter basename={process.env.PUBLIC_URL}>
-                <Routes>
-                    <Route path='/' element={<Home/>}></Route>
-                    <Route path='/contact' element={<Contact/>}></Route>
-                    <Route path='/recruitment' element={<Recruitment/>}></Route>
-                    <Route path='/brothers' element={<Brothers/>}></Route>
-                </Routes>
-            </HashRouter>
-        </div>
-        </ThemeProvider>
+        <AuthProvider>
+            <ThemeProvider theme={theme}>
+                <div className="App">
+                    <HashRouter basename={process.env.PUBLIC_URL}>
+                        <Routes>
+                            <Route path='/' element={<Home/>}></Route>
+                            <Route path='/contact' element={<Contact/>}></Route>
+                            <Route path='/recruitment' element={<Recruitment/>}></Route>
+                            <Route path='/brothers' element={<Brothers/>}></Route>
+                            <Route path='/activelogin' element={<ActivePortalLogin/>}></Route>
+                            <Route path='/activeportal' element={<ProtectedRoute><ActivePortal /></ProtectedRoute>} />
+            <Route path='/login' element={<ActivePortalLogin />} />
+                        </Routes>
+                    </HashRouter>
+                </div>
+            </ThemeProvider>
+        </AuthProvider>
     );
 }
 
