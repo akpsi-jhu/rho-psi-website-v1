@@ -32,6 +32,9 @@ const SideBar = ({ isOpen, toggle }) => {
           <SidebarLink to="/contact" onClick={toggle}>
             Contact
           </SidebarLink>
+          <SidebarLink to="/activePortal" onClick={toggle}>
+            Active Portal
+          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
