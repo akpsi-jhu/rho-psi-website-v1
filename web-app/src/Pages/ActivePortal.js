@@ -5,6 +5,7 @@ import { Box, Stack, Typography, Button } from '@mui/material';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer";
 import SideBar from "../Components/Sidebar/Sidebar";
+import AlumniDatabase from '../Components/AlumniDatabase';
 
 const ActivePortal = () => {
   const { setAuthenticated } = useContext(AuthContext);
@@ -17,14 +18,14 @@ const ActivePortal = () => {
   };
 
   return (
-    <Stack sx={{ minHeight: '100vh', justifyContent: 'space-between' }}>
+    <Stack alignItems='center'  sx={{ minHeight: '100vh', justifyContent: 'space-between' }}>
       <Navbar toggle={toggle} blue={true}></Navbar>
       <SideBar isOpen={isOpen} toggle={toggle}/>  
-      <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 8, marginTop: 20 }}>
+      <Box maxWidth={1920}  sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 8, marginTop: 20 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Welcome to the Active Portal
+          Alumni Directory
         </Typography>
-        {/* Insert additional portal content here */}
+        <AlumniDatabase></AlumniDatabase>
         <Button variant="contained" onClick={handleLogout} sx={{ backgroundColor: "#0C406F", mt: 2 }}>
           Logout
         </Button>
