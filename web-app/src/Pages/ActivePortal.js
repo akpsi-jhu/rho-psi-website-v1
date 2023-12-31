@@ -21,7 +21,7 @@ const ActivePortal = () => {
     <Stack alignItems='center'  sx={{ minHeight: '100vh', justifyContent: 'space-between' }}>
       <Navbar toggle={toggle} blue={true}></Navbar>
       <SideBar isOpen={isOpen} toggle={toggle}/>  
-      <Box maxWidth={1920}  sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 8, marginTop: 20 }}>
+      <Box maxWidth={1920}  sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 8, marginTop: 20, marginBottom: 20 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Alumni Directory
         </Typography>
