@@ -34,7 +34,6 @@ const ActivePortalLogin = () => {
       alert('Invalid credentials');
     }
   };
-  
   return (
     <Stack alignItems='center' sx={{ minHeight: '100vh', justifyContent: 'space-between' }}> {/* Adjusted for sticky footer */}
       <Navbar toggle={toggle} blue={true}></Navbar>

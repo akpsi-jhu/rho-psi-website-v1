@@ -17,6 +17,16 @@ const ActivePortalLogin = () => {
   const toggle = () => setIsOpen(!isOpen);
   const api = new BrotherApi();
 
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    if (password === fixedPassword) {
+      setAuthenticated(true);
+      navigate('/activeportal');
+    } else {
+      alert('Invalid credentials');
+    }
+  };
+
   const [brothers, setBrothers] = useState([]);
   useEffect(() => {
       api.getActiveBrothersList().then(result => {
@@ -24,17 +34,6 @@ const ActivePortalLogin = () => {
       })
   }, []);
 
-  const handleLogin = async (event) => {
-    event.preventDefault();
-    const brotherEmails = brothers.map(brother => brother.jhuEmail); // Extract emails from brothers list
-    if (password === fixedPassword && brotherEmails.includes(email)) {
-      setAuthenticated(true);
-      navigate('/activeportal');
-    } else {
-      alert('Invalid credentials');
-    }
-  };
-  
   return (
     <Stack alignItems='center' sx={{ minHeight: '100vh', justifyContent: 'space-between' }}> {/* Adjusted for sticky footer */}
       <Navbar toggle={toggle} blue={true}></Navbar>

@@ -5,7 +5,6 @@ import { TextField, Button, Stack, Typography, Box } from '@mui/material';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer";
 import SideBar from "../Components/Sidebar/Sidebar";
-import { BrotherApi } from "../api/Firestore/BrotherApi.ts";
 
 const ActivePortalLogin = () => {
   const [email, setEmail] = useState('');
@@ -15,7 +14,16 @@ const ActivePortalLogin = () => {
   const fixedPassword = 'akpsi123';
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  const api = new BrotherApi();
+
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    if (password === fixedPassword) {
+      setAuthenticated(true);
+      navigate('/activeportal');
+    } else {
+      alert('Invalid credentials');
+    }
+  };
 
   const [brothers, setBrothers] = useState([]);
   useEffect(() => {
@@ -24,17 +32,6 @@ const ActivePortalLogin = () => {
       })
   }, []);
 
-  const handleLogin = async (event) => {
-    event.preventDefault();
-    const brotherEmails = brothers.map(brother => brother.jhuEmail); // Extract emails from brothers list
-    if (password === fixedPassword && brotherEmails.includes(email)) {
-      setAuthenticated(true);
-      navigate('/activeportal');
-    } else {
-      alert('Invalid credentials');
-    }
-  };
-  
   return (
     <Stack alignItems='center' sx={{ minHeight: '100vh', justifyContent: 'space-between' }}> {/* Adjusted for sticky footer */}
       <Navbar toggle={toggle} blue={true}></Navbar>
