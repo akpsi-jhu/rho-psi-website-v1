@@ -7,9 +7,9 @@ import React from "react";
 const ExecSection = (props) => {
     const {brothers, pc} = props;
     let pcBrothers = brothers.filter(brother => {
-        return brother.exec === true;
+        return brother.position; // This will include brothers whose 'position' is neither null, undefined, nor an empty string
     })
-
+    
     // sort by position name
     pcBrothers = pcBrothers.sort((a, b) => {
         return a.position.localeCompare(b.position)});

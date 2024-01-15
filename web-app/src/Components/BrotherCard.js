@@ -2,8 +2,9 @@ import {Card, CardContent, CardMedia, Typography} from "@mui/material";
 
 function Description(props) {
     if (props.display == "major") {
+        const firstMajor = props.brother.majors.split(',')[0];
         return <Typography sx ={{ display: 'inline-block', fontSize: '14px' }} variant="body">
-            {props.brother.majors[0]}
+            {firstMajor}
         </Typography>
     } else if (props.display == "position") {
         return <Typography sx ={{ display: 'inline-block', fontSize: '14px' }} variant="body">
@@ -15,7 +16,7 @@ function Description(props) {
 function Year(props) {
     if (props.year) {
         return <Typography sx={{display: 'inline-block', fontSize: '14px'}} variant="body">
-            {(new Date(props.brother.graduationDate.toMillis())).getFullYear()}
+            {props.brother.graduationYear} 
         </Typography>
     }
 }
@@ -24,7 +25,7 @@ const BrotherCard = (props) => {
     const {brother, display="major", year=true} = props;
     return (
         <Card sx={{boxShadow: "none"}}>
-            <CardMedia sx={{height: 300, width: "100%", padding: 0}} component="img" image={brother.imageUrl}/>
+            <CardMedia sx={{height: 300, width: "100%", padding: 0}} component="img" image={brother.headshotImageUrl}/>
             <CardContent>
                 <div>
                     <Typography sx={{fontWeight: "bold", display: 'inline-block'}} variant="body">
