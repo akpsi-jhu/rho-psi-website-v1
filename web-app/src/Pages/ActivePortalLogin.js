@@ -8,7 +8,7 @@ import SideBar from "../Components/Sidebar/Sidebar";
 import { BrotherApi } from "../api/Firestore/BrotherApi.ts";
 
 const ActivePortalLogin = () => {
-  const [email, setEmail] = useState('');
+  var [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { setAuthenticated } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -27,6 +27,7 @@ const ActivePortalLogin = () => {
   const handleLogin = async (event) => {
     event.preventDefault();
     const brotherEmails = brothers.map(brother => brother.jhuEmail); // Extract emails from brothers list
+    email = email.toLowerCase()
     if (password === fixedPassword && brotherEmails.includes(email)) {
       setAuthenticated(true);
       navigate('/activeportal');
