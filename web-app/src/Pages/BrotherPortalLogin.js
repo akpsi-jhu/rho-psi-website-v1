@@ -32,7 +32,7 @@ const BrotherPortalLogin = () => {
       setAuthenticated(true);
       navigate('/brotherPortal');
     } else {
-      alert('Invalid credentials');
+      alert('Invalid brother credentials');
     }
   };
   

@@ -1,21 +1,14 @@
 import React, {useState} from "react";
 import { Stack, Box, Typography, makeStyles } from "@mui/material";
-import Hero from "../Components/Hero"
 import Navbar from "../Components/Navbar/Navbar"
-import hero from "../assets/city.png";
-import About from "../Components/About"
 import RushMessage from "../Components/RushMessage"
-import Logos from "../Components/Logos";
 import Footer from "../Components/Footer";
-import { maxWidth } from "@mui/system";
 import Title from "../Components/Title";
-import EmailForm from "../Components/EmailForm";
 import recruitment from "../assets/F23Rushbanner.png";
 import Faq from "../Components/Faq"
 import TagHeader from "../Components/TagHeader";
 import SideBar from "../Components/Sidebar/Sidebar";
 import "../styles/Image.css";
-import rushChairIMG from "../assets/rushChairsFall2023.jpg";
 
 
 

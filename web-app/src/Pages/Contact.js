@@ -1,13 +1,7 @@
 import React, {useState} from "react";
-import { Stack, Box, Typography, makeStyles } from "@mui/material";
-import Hero from "../Components/Hero"
+import { Stack } from "@mui/material";
 import Navbar from "../Components/Navbar/Navbar"
-import hero from "../assets/city.png";
-import About from "../Components/About"
-import Rush from "../Components/Rush"
-import Logos from "../Components/Logos";
 import Footer from "../Components/Footer";
-import { maxWidth } from "@mui/system";
 import Title from "../Components/Title";
 import EmailForm from "../Components/EmailForm";
 import SideBar from "../Components/Sidebar/Sidebar";
