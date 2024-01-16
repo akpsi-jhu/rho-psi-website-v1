@@ -1,13 +1,13 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../Auth/AuthContext';
+import { AuthContext } from '../Auth/AuthContext.js';
 import { TextField, Button, Stack, Typography, Box } from '@mui/material';
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer";
-import SideBar from "../Components/Sidebar/Sidebar";
+import Navbar from "../Components/Navbar/Navbar.js";
+import Footer from "../Components/Footer.js";
+import SideBar from "../Components/Sidebar/Sidebar.js";
 import { BrotherApi } from "../api/Firestore/BrotherApi.ts";
 
-const ActivePortalLogin = () => {
+const BrotherPortalLogin = () => {
   var [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { setAuthenticated } = useContext(AuthContext);
@@ -19,7 +19,7 @@ const ActivePortalLogin = () => {
 
   const [brothers, setBrothers] = useState([]);
   useEffect(() => {
-      api.getActiveBrothersList().then(result => {
+      api.getBrothersList().then(result => {
           setBrothers(result);
       })
   }, []);
@@ -30,7 +30,7 @@ const ActivePortalLogin = () => {
     email = email.toLowerCase()
     if (password === fixedPassword && brotherEmails.includes(email)) {
       setAuthenticated(true);
-      navigate('/activeportal');
+      navigate('/brotherPortal');
     } else {
       alert('Invalid credentials');
     }
@@ -42,7 +42,7 @@ const ActivePortalLogin = () => {
       <SideBar isOpen={isOpen} toggle={toggle}/>              
       <Box sx={{ width: '100%', maxWidth: 500, mt: 8, mb: 8, marginTop: 20 }}>
         <Typography component="h1" variant="h5">
-          Login to Active Portal
+          Login to Brother Portal
         </Typography>
         <Box component="form" onSubmit={handleLogin} noValidate sx={{ mt: 1 }}>
           <TextField
@@ -80,4 +80,4 @@ const ActivePortalLogin = () => {
   );
 };
 
-export default ActivePortalLogin;
+export default BrotherPortalLogin;

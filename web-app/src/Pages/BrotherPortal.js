@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 import SideBar from "../Components/Sidebar/Sidebar";
 import AlumniDatabase from '../Components/AlumniDatabase';
 
-const ActivePortal = () => {
+const BrotherPortal = () => {
   const { setAuthenticated } = useContext(AuthContext);
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -43,4 +43,4 @@ const ActivePortal = () => {
   );
 };
 
-export default ActivePortal;
+export default BrotherPortal;
