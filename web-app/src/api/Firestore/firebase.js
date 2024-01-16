@@ -2,11 +2,9 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getStorage } from "firebase/storage";
-import { getFirestore } from "firebase/firestore";
-
+import { getDatabase } from "firebase/database"; // Import for Realtime Database
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyDnjQax5JjcEOSs7T_Yv8yGYxiwNWCJmkk",
   authDomain: "akpsi-rho-psi.firebaseapp.com",
@@ -24,5 +22,5 @@ const analytics = getAnalytics(app);
 // export reference to storage
 export const storage = getStorage(app);
 
-// export reference to firestore database
-export const db = getFirestore(app);
+// export reference to the Realtime Database
+export const db = getDatabase(app);

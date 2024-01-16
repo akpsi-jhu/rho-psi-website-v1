@@ -21,8 +21,7 @@ const Home = () => {
 
     const api = new BrotherApi();
 
-    const pcNames = ["Alpha Lambda", "Alpha Mu", "Alpha Nu", "Alpha Xi", "Alpha Omicron", "Alpha Pi", "Alpha Rho"]
-
+    const pcYears = ["2021-1", "2021-2", "2022-1", "2022-2", "2023-1", "2023-2"]
     // const pcNames = ["Alpha Xi"]
     const [brothers, setBrothers] = useState([]);
       useEffect(() => {
@@ -30,6 +29,8 @@ const Home = () => {
               setBrothers(result);
           })
       }, []);
+
+    //   console.log(brothers.length)
 
       //need to create different includes based on class
       const includes = (brother) => {
@@ -68,7 +69,7 @@ const Home = () => {
                     <Title wrap={false} header="Active Brothers" body="We’re more than just peers in a business organization on campus. We’re here to build meaningful friendships to last a life time. Meet the members of the Rho Psi chapter, where we celebrate our diversity of backgrounds and interests."></Title>
                     <ExecSection brothers={brothers}/>
                     <Box>
-                        {pcNames.map((pc) => (
+                        {pcYears.map((pc) => (
                             <Stack>
                                 <Divider flexItem sx = {{
                                     borderRightWidth: 5,
@@ -76,8 +77,6 @@ const Home = () => {
                                 }}></Divider>
                                 <PcSection brothers={brothers} pc={pc}/>
                             </Stack>
-
-
                         ))}
                     </Box>
                 </Stack>

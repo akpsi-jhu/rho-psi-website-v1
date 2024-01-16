@@ -1,12 +1,11 @@
-import { Timestamp } from "firebase/firestore"
-
+// Use a compatible date type for Realtime Database, such as string or number
 export type BrotherId = string;
 
 export interface Brother {
     id: BrotherId;
     firstName: string;
     lastName: string;
-    graduationDate: Timestamp;
+    graduationDate: string; // Changed to string
     majors: string[];
     minors: string[];
     pledgeClass: string;
@@ -22,7 +21,7 @@ export interface Brother {
     hometown: string;
     imageUrl: string;
     linkedInUrl: string;
-    birthdate: Timestamp;
+    birthdate: string; // Changed to string
     pronouns: string;
 }
 
