@@ -12,7 +12,7 @@ const ActivePortalLogin = () => {
   const [password, setPassword] = useState('');
   const { setAuthenticated } = useContext(AuthContext);
   const navigate = useNavigate();
-  const fixedPassword = 'akpsi123';
+  const fixedPassword = 'akpsirhopsi1904';
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const api = new BrotherApi();
