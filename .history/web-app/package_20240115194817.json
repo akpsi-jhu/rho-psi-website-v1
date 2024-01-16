@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "homepage": "https://akpsi-jhu.github.io/rho-psi-website-v1",
-  "version": "0.3.0",
+  "version": "0.2.0",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.5",

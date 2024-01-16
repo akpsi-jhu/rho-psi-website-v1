@@ -15,7 +15,7 @@ function App() {
         <AuthProvider>
             <ThemeProvider theme={theme}>
                 <div className="App">
-                    <HashRouter>
+                    <HashRouter basename={process.env.PUBLIC_URL}>
                         <Routes>
                             <Route path='/' element={<Home/>}></Route>
                             <Route path='/contact' element={<Contact/>}></Route>
