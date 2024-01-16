@@ -1,9 +1,9 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Box, Card, CardContent, Typography, Collapse, IconButton, Grid, Paper, Autocomplete, TextField, Chip, Link } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EmailIcon from '@mui/icons-material/MailOutline';import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { styled } from '@mui/material/styles';
-import dummyData from '../dummy_data/alumni.json';
+import { BrotherApi } from "../api/Firestore/BrotherApi.ts";
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -23,16 +23,17 @@ const AlumniDatabase = () => {
   const [selectedPositions, setSelectedPositions] = useState([]);
   const [selectedCompanies, setSelectedCompanies] = useState([]);
   const [expanded, setExpanded] = useState({});
-
-  const users = useMemo(() => {
-    const currentYear = new Date().getFullYear();
-
-    // Filter out users who haven't graduated yet and sort by graduation year descending
-    return dummyData.sheets.Users.slice(1)
-      .filter(user => user.graduationYear && user.graduationYear <= currentYear)
-      .sort((a, b) => b.graduationYear - a.graduationYear);
-  }, []); // No dependencies, useMemo runs only once when the component mounts
-
+  const [users, setUsers] = useState([]);
+  
+  useEffect(() => {
+    const api = new BrotherApi();
+    api.getInactiveBrothersList().then(data => {
+      setUsers(data);
+    }).catch(error => {
+      console.error("Error fetching data: ", error);
+      // handle error appropriately
+    });
+  }, []);
 
   const yearOptions = useMemo(() => [...new Set(users.map(user => user.graduationYear))].filter(Boolean), [users]);
   const majorOptions = useMemo(() => [...new Set(users.flatMap(user => user.majors?.split(',')))].filter(Boolean), [users]);

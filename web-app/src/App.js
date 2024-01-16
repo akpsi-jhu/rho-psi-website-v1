@@ -4,8 +4,8 @@ import Home from "./Pages/Home"
 import Contact from "./Pages/Contact"
 import Recruitment from './Pages/Recruitment';
 import Brothers from './Pages/Brothers';
-import ActivePortal from './Pages/ActivePortal';
-import ActivePortalLogin from './Pages/ActivePortalLogin';
+import BrotherPortal from './Pages/BrotherPortal';
+import BrotherPortalLogin from './Pages/BrotherPortalLogin';
 import {createTheme, ThemeProvider} from "@mui/material";
 import { AuthProvider } from './Auth/AuthContext'; // Import AuthProvider
 import ProtectedRoute from './Auth/ProtectedRoute'; // Import ProtectedRoute
@@ -21,9 +21,9 @@ function App() {
                             <Route path='/contact' element={<Contact/>}></Route>
                             <Route path='/recruitment' element={<Recruitment/>}></Route>
                             <Route path='/brothers' element={<Brothers/>}></Route>
-                            <Route path='/activelogin' element={<ActivePortalLogin/>}></Route>
-                            <Route path='/activeportal' element={<ProtectedRoute><ActivePortal /></ProtectedRoute>} />
-            <Route path='/login' element={<ActivePortalLogin />} />
+                            <Route path='/activelogin' element={<BrotherPortalLogin/>}></Route>
+                            <Route path='/brotherPortal' element={<ProtectedRoute><BrotherPortal /></ProtectedRoute>} />
+            <Route path='/login' element={<BrotherPortalLogin />} />
                         </Routes>
                     </HashRouter>
                 </div>

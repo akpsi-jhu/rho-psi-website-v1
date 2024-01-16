@@ -74,7 +74,7 @@ const Navbar = ({ toggle, blue }) => {
               <NavLinkR blue={blue} to="/contact">Contact</NavLinkR>
             </NavItem>
             <NavItem>
-              <NavLinkR blue={blue} to="/activePortal">Active Portal</NavLinkR>
+              <NavLinkR blue={blue} to="/brotherPortal">Brother Portal</NavLinkR>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

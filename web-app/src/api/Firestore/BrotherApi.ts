@@ -12,6 +12,11 @@ export class BrotherApi implements IBrotherApi {
         const allBrothers = await this.getBrothersList();
         return allBrothers.filter(brother => brother.active);
     }
+    
+    async getInactiveBrothersList(): Promise<Brother[]> {
+      const allBrothers = await this.getBrothersList();
+      return allBrothers.filter(brother => !brother.active).reverse();
+  }
 
     async addBrother(newBrother: Brother): Promise<BrotherId> {
         const newRef = push(child(ref(db), 'Users'));
