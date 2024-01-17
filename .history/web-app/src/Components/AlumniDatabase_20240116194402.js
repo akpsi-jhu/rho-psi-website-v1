@@ -35,11 +35,12 @@ const AlumniDatabase = () => {
     });
   }, []);
 
+    // Function to normalize and combine similar options
   // Function to normalize, split and combine options
   const normalizeAndCombineOptions = (options, key) => {
     const allOptions = options.flatMap(option => 
       option[key]
-        ? option[key].split(',').map(item => item.trim())
+        ? option[key].split(',').map(item => item.toLowerCase().trim())
         : []
     );
     return [...new Set(allOptions)].filter(Boolean);
@@ -50,6 +51,7 @@ const AlumniDatabase = () => {
   const majorOptions = useMemo(() => normalizeAndCombineOptions(users, 'majors'), [users]);
   const positionOptions = useMemo(() => normalizeAndCombineOptions(users, 'position'), [users]);
   const companyOptions = useMemo(() => [...new Set(users.map(user => user.currentCompany))].filter(Boolean), [users]);
+
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);

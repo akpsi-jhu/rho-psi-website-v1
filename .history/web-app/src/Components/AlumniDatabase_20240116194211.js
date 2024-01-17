@@ -35,17 +35,12 @@ const AlumniDatabase = () => {
     });
   }, []);
 
-  // Function to normalize, split and combine options
-  const normalizeAndCombineOptions = (options, key) => {
-    const allOptions = options.flatMap(option => 
-      option[key]
-        ? option[key].split(',').map(item => item.trim())
-        : []
-    );
-    return [...new Set(allOptions)].filter(Boolean);
-  };
+    // Function to normalize and combine similar options
+    const normalizeAndCombineOptions = (options, key) => {
+      const normalized = options.map(option => option[key]?.toLowerCase().trim()).filter(Boolean);
+      return [...new Set(normalized)];
+    };
 
-  // useMemo hooks for options
   const yearOptions = useMemo(() => [...new Set(users.map(user => user.graduationYear))].filter(Boolean), [users]);
   const majorOptions = useMemo(() => normalizeAndCombineOptions(users, 'majors'), [users]);
   const positionOptions = useMemo(() => normalizeAndCombineOptions(users, 'position'), [users]);
