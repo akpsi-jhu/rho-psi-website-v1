@@ -16,11 +16,11 @@ const PcSection = (props) => {
     const pcName = pcNames[pcIndex] || pc;
 
     let pcBrothers = brothers.filter(brother => {
-        console.log(brother.pledgeClass, pc);
+        // console.log(brother.pledgeClass, pc);
         return brother.pledgeClass === pc;
     });
 
-    console.log(pcBrothers);
+    // console.log(pcBrothers);
     return (
         <Stack
             direction="column"
