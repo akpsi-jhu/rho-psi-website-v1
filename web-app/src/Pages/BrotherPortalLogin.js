@@ -24,15 +24,21 @@ const BrotherPortalLogin = () => {
       })
   }, []);
 
+  const normalizeEmailDomain = (email) => {
+    if (!email) return email;  // Return the original email if it's undefined or null
+    return email.replace(/@jh\.edu$/i, "@jhu.edu");
+  };
+  
   const handleLogin = async (event) => {
     event.preventDefault();
-    const brotherEmails = brothers.map(brother => brother.jhuEmail); // Extract emails from brothers list
-    email = email.toLowerCase()
-    if (password === fixedPassword && brotherEmails.includes(email)) {
+    const normalizedInputEmail = normalizeEmailDomain(email.toLowerCase());
+    const normalizedBrotherEmails = brothers.map(brother => normalizeEmailDomain(brother.jhuEmail)); // Normalize emails from brothers list
+    
+    if (password === fixedPassword && normalizedBrotherEmails.includes(normalizedInputEmail)) {
       setAuthenticated(true);
       navigate('/brotherPortal');
     } else {
-      alert('Invalid brother credentials');
+      alert('Invalid credentials');
     }
   };
   
