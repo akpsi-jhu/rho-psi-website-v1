@@ -32,22 +32,6 @@ const Home = () => {
 
     //   console.log(brothers.length)
 
-      //need to create different includes based on class
-      const includes = (brother) => {
-        //const shortQuery = query.trim().toLowerCase();
-
-        /** 
-        return (
-          (brother.itemDetails.categories == category ||
-          category === 'Filter') && (
-          shortQuery === "" ||
-          brother.itemDetails.title.toLowerCase().includes(shortQuery) ||
-          brother.itemDetails.description.toLowerCase().includes(shortQuery))
-          
-        );
-        */
-      };
-
     if (!brothers.length) {
         return(
             <Stack alignItems='center' overflow='hidden'>
