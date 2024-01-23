@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.66305ce2.css",
-    "main.js": "/static/js/main.a09d8895.js",
+    "main.js": "/static/js/main.c3207313.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/city.png": "/static/media/city.bdad29d412c59a40601c.png",
-    "static/media/rushChairsFall2023.jpg": "/static/media/rushChairsFall2023.0758067846febe6b9205.jpg",
     "static/media/group.png": "/static/media/group.58a2a4018765832da3e6.png",
     "static/media/social.png": "/static/media/social.87502cef16875efd17c2.png",
     "static/media/prof.png": "/static/media/prof.175a9844347960443d62.png",
     "static/media/brotherhood.png": "/static/media/brotherhood.ec474e1c3dfa6ebffeec.png",
-    "static/media/F23Rushbanner.png": "/static/media/F23Rushbanner.53acb7dd557e524a11c9.png",
+    "static/media/rushChairsSp24.jpg": "/static/media/rushChairsSp24.e15e0f6de052dd601064.jpg",
+    "static/media/SpringRush24Banner.png": "/static/media/SpringRush24Banner.03126d171ed0bf9d457e.png",
     "static/media/google.png": "/static/media/google.3787d4708786db4554f7.png",
     "static/media/citi.png": "/static/media/citi.2888b81b7dbaafc1cfae.png",
     "static/media/microsoft.png": "/static/media/microsoft.f7bf90837fdd9355e907.png",
@@ -30,11 +30,11 @@
     "static/media/jpm.png": "/static/media/jpm.85a43bc80573bc268fb8.png",
     "index.html": "/index.html",
     "main.66305ce2.css.map": "/static/css/main.66305ce2.css.map",
-    "main.a09d8895.js.map": "/static/js/main.a09d8895.js.map",
+    "main.c3207313.js.map": "/static/js/main.c3207313.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66305ce2.css",
-    "static/js/main.a09d8895.js"
+    "static/js/main.c3207313.js"
   ]
 }
