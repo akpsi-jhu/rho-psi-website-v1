@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar/Navbar"
 import RushMessage from "../Components/RushMessage"
 import Footer from "../Components/Footer";
 import Title from "../Components/Title";
-import recruitment from "../assets/F23Rushbanner.png";
+import recruitment from "../assets/SpringRush24Banner.png";
 import Faq from "../Components/Faq"
 import TagHeader from "../Components/TagHeader";
 import SideBar from "../Components/Sidebar/Sidebar";
@@ -35,10 +35,6 @@ const Recruitment = () => {
             <Faq></Faq>
             </Stack>
             <Footer/>
-
-
-
-
         </Stack>
 	);
 };
