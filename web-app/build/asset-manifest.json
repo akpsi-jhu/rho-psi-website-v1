@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.66305ce2.css",
-    "main.js": "/static/js/main.c3207313.js",
+    "main.css": "/static/css/main.23987193.css",
+    "main.js": "/static/js/main.2a5ddffe.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/city.png": "/static/media/city.bdad29d412c59a40601c.png",
-    "static/media/group.png": "/static/media/group.58a2a4018765832da3e6.png",
+    "static/media/RushChairsFall2024.jpeg": "/static/media/RushChairsFall2024.b6a7e77cd66405ce3404.jpeg",
     "static/media/social.png": "/static/media/social.87502cef16875efd17c2.png",
     "static/media/prof.png": "/static/media/prof.175a9844347960443d62.png",
     "static/media/brotherhood.png": "/static/media/brotherhood.ec474e1c3dfa6ebffeec.png",
-    "static/media/rushChairsSp24.jpg": "/static/media/rushChairsSp24.e15e0f6de052dd601064.jpg",
-    "static/media/SpringRush24Banner.png": "/static/media/SpringRush24Banner.03126d171ed0bf9d457e.png",
+    "static/media/FallRush24Banner.JPEG": "/static/media/FallRush24Banner.d73a7c856ad533e1250c.JPEG",
     "static/media/google.png": "/static/media/google.3787d4708786db4554f7.png",
     "static/media/citi.png": "/static/media/citi.2888b81b7dbaafc1cfae.png",
     "static/media/microsoft.png": "/static/media/microsoft.f7bf90837fdd9355e907.png",
@@ -29,12 +28,12 @@
     "static/media/citadel.png": "/static/media/citadel.23b4a371bb0ea902aba8.png",
     "static/media/jpm.png": "/static/media/jpm.85a43bc80573bc268fb8.png",
     "index.html": "/index.html",
-    "main.66305ce2.css.map": "/static/css/main.66305ce2.css.map",
-    "main.c3207313.js.map": "/static/js/main.c3207313.js.map",
+    "main.23987193.css.map": "/static/css/main.23987193.css.map",
+    "main.2a5ddffe.js.map": "/static/js/main.2a5ddffe.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66305ce2.css",
-    "static/js/main.c3207313.js"
+    "static/css/main.23987193.css",
+    "static/js/main.2a5ddffe.js"
   ]
 }

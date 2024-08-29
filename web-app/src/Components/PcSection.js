@@ -6,8 +6,8 @@ import React from "react";
 
 const PcSection = (props) => {
     const { brothers, pc } = props;
-    const pcNames = ["Alpha Nu", "Alpha Xi", "Alpha Omicron", "Alpha Pi", "Alpha Rho", "Alpha Sigma"];
-    const pcYears = ["2021-1", "2021-2", "2022-1", "2022-2", "2023-1", "2023-2"];
+    const pcNames = ["Alpha Omicron", "Alpha Pi", "Alpha Rho", "Alpha Sigma", "Alpha Tau"];
+    const pcYears = ["2022-1", "2022-2", "2023-1", "2023-2", "2024-1"];
 
     // Find the index of the pc in pcYears
     const pcIndex = pcYears.indexOf(pc);

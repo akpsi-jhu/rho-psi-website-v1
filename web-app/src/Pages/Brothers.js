@@ -21,7 +21,7 @@ const Home = () => {
 
     const api = new BrotherApi();
 
-    const pcYears = ["2021-1", "2021-2", "2022-1", "2022-2", "2023-1", "2023-2"]
+    const pcYears = ["2022-1", "2022-2", "2023-1", "2023-2", "2024-1"]
     // const pcNames = ["Alpha Xi"]
     const [brothers, setBrothers] = useState([]);
       useEffect(() => {
