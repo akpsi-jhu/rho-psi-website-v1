@@ -1,18 +1,16 @@
 import React from "react";
 import { Stack, Box, Typography, Button } from "@mui/material";
-import rushChairIMG from "../assets/rushChairsSp24.jpg";
+import rushChairIMG from "../assets/RushChairsFall2024.jpeg";
 import ImageBox from "./ImageBox";
 
 
 
 const RushMessage = () => {
-
-
 	return (
         <Stack spacing={8} >
             <Stack spacing={3}>
                               <Button
-                        href={"https://forms.gle/fq1G2xXcj9zkYxYB6"}
+                        href={"https://forms.gle/aSVKr1MofaEgidGg8"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
@@ -22,7 +20,7 @@ const RushMessage = () => {
                         Non-binding Interest Form
                     </Button>
                     <Button
-                        href={"https://forms.gle/if1AYZEhwTCmqu3t5"}
+                        href={"https://forms.gle/J9Cb4Sfeg2oabzt86"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
@@ -33,7 +31,7 @@ const RushMessage = () => {
                         Sign Up for Coffee Chats
                     </Button>
                     <Button    
-                        href={"https://groupme.com/join_group/98277256/unc1aT9M"}
+                        href={"https://groupme.com/join_group/102101339/3khiucCR"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
@@ -65,9 +63,9 @@ const RushMessage = () => {
                 <Stack height="100%" spacing={4} textAlign="left">
                     <Stack spacing={3} textAlign="left">
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
-                                    fontWeight={400}>Hi everyone! My name is Julie Alan, and I’m super excited to be one of the rush chairs this semester! I’m a sophomore from Haworth, New Jersey, majoring in Public Health. I initially wasn’t sure I wanted to join AKPsi, but after coming to Meet the Brothers and talking to so many cool people, I knew I wanted to be a part of this community! I feel so lucky to have rushed, and I hope to make even more lifelong memories with everyone joining this semester!</Typography>
+                                    fontWeight={400}>Hi! My name is Justin Wang, and I’m a junior majoring in Applied Math and Physics from Columbia Maryland. I’m super excited to be your rush chair this semester! I’ve found many of my close friends through this community and have made some of my favorite memories at Hopkins hanging out and going on trips with everyone here. I’m looking forward to meeting all of you at our events!</Typography>
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
-                                    fontWeight={400}>Hi! I’m Ria and I’m a sophomore majoring in BME from Boston, Massachusetts. By joining AKPsi, I’ve really found a community here on campus and have made so many lifelong friends. From just hanging out at someone’s place to bonding with everyone at retreat, a ton of my favorite Hopkins memories are from AKPsi and I’m so glad I made the decision to rush. I’m so excited to be one of your rush chairs this semester and I’m looking forward to getting to meet you all rushing this semester!</Typography>
+                                    fontWeight={400}>Hi everyone! I'm Matthew Dao, and I'm pumped to be your rush chair this semester. I'm a junior studying mechanical engineering from Las Vegas, Nevada. AKPsi has given me so many opportunities and tons of great friends, and I'm super excited to share this community with you. Rush is a one-of-a-kind experience, so make sure to get the most out of it! Can't wait to meet you at all of our rush events!</Typography>
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
                                     fontWeight={400}>Our first and foremost advice for rush is to be yourself! Dont be
                             shy to meet new people and make meaningful connections. Try to learn about all the awesome

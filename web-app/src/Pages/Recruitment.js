@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import { Stack, Box, Typography, makeStyles } from "@mui/material";
+import { Stack, Box } from "@mui/material";
 import Navbar from "../Components/Navbar/Navbar"
 import RushMessage from "../Components/RushMessage"
 import Footer from "../Components/Footer";
 import Title from "../Components/Title";
-import recruitment from "../assets/SpringRush24Banner.png";
+import recruitment from "../assets/FallRush24Banner.JPEG";
 import Faq from "../Components/Faq"
 import TagHeader from "../Components/TagHeader";
 import SideBar from "../Components/Sidebar/Sidebar";
