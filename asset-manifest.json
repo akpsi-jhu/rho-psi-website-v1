@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.23987193.css",
-    "main.js": "/static/js/main.e5b29621.js",
+    "main.js": "/static/js/main.2179c75d.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/city.png": "/static/media/city.bdad29d412c59a40601c.png",
     "static/media/RushChairsFall2024.jpeg": "/static/media/RushChairsFall2024.b6a7e77cd66405ce3404.jpeg",
@@ -29,11 +29,11 @@
     "static/media/jpm.png": "/static/media/jpm.85a43bc80573bc268fb8.png",
     "index.html": "/index.html",
     "main.23987193.css.map": "/static/css/main.23987193.css.map",
-    "main.e5b29621.js.map": "/static/js/main.e5b29621.js.map",
+    "main.2179c75d.js.map": "/static/js/main.2179c75d.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23987193.css",
-    "static/js/main.e5b29621.js"
+    "static/js/main.2179c75d.js"
   ]
 }
