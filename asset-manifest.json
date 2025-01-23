@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.23987193.css",
-    "main.js": "/static/js/main.12e4f7b6.js",
+    "main.js": "/static/js/main.771517ea.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/city.png": "/static/media/city.bdad29d412c59a40601c.png",
+    "static/media/RushChairsSpring2025.png": "/static/media/RushChairsSpring2025.2cf1f5c5b1dd2b0bee86.png",
     "static/media/social.png": "/static/media/social.87502cef16875efd17c2.png",
     "static/media/prof.png": "/static/media/prof.175a9844347960443d62.png",
     "static/media/brotherhood.png": "/static/media/brotherhood.ec474e1c3dfa6ebffeec.png",
     "static/media/S25RushBanner.png": "/static/media/S25RushBanner.4cdd846a290620ffea56.png",
-    "static/media/RushSP25InstaPosts.jpeg": "/static/media/RushSP25InstaPosts.b0fa640a8f8f4f26e762.jpeg",
     "static/media/google.png": "/static/media/google.3787d4708786db4554f7.png",
     "static/media/citi.png": "/static/media/citi.2888b81b7dbaafc1cfae.png",
     "static/media/microsoft.png": "/static/media/microsoft.f7bf90837fdd9355e907.png",
@@ -29,11 +29,11 @@
     "static/media/jpm.png": "/static/media/jpm.85a43bc80573bc268fb8.png",
     "index.html": "/index.html",
     "main.23987193.css.map": "/static/css/main.23987193.css.map",
-    "main.12e4f7b6.js.map": "/static/js/main.12e4f7b6.js.map",
+    "main.771517ea.js.map": "/static/js/main.771517ea.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23987193.css",
-    "static/js/main.12e4f7b6.js"
+    "static/js/main.771517ea.js"
   ]
 }
