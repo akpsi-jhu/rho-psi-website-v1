@@ -19,7 +19,7 @@ const Rush = () => {
                 <Typography variant="h7"  fontFamily="" lineHeight={1.5}  fontSize={{xs: 16, md: 16, lg: 16}} fontWeight={400}>Our chapter’s own alumni now currently work at companies such as JPMorgan, Bain & Co., Bridgewater Associates, McKinsey & Co., Amazon, Capital One, Bloomberg, Facebook, Accenture, and Goldman Sachs. Some have successfully established their own companies and gone on to become finalists at TechCrunch Disrupt, the world’s premier startup competition, while others have founded their own non-profit organizations.</Typography>
                 <Typography variant="h7"   fontFamily="" lineHeight={1.5}  fontSize={{xs: 16, md: 16, lg: 16}} fontWeight={400}>We love to see our chapter grow and are always excited to welcome new members though our Fall and Spring recruitment. If you have any questions about Alpha Kappa Psi, please do not hesitate to email our Executive Board at akpsijhu@gmail.com or check our instagram @akpsi_jhu.</Typography>
             </Stack>
-            <Button href={"https://forms.gle/aSVKr1MofaEgidGg8"} target={"_blank"}
+            <Button href={"https://forms.gle/P5WAQzvQY9kP1BxPA"} target={"_blank"}
                                 variant="contained"
                                 sx={{ width: '100%', fontSize: 20, padding: 1, backgroundColor: '#0C406F', borderRadius: 85, boxShadow: 3
                             }}>

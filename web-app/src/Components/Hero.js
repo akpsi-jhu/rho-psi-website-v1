@@ -66,7 +66,7 @@ const Hero = () => {
 							variant='outlined'
 							sx={{  width: {xs: '80vw', sm: 450, md: 450}, fontSize: 20, padding: 1, color: 'white', borderColor: 'white', borderRadius: 85, fontFamily: "Iceland", boxShadow: 3
                         }}>
-							Spring 2024 RUSH
+							Spring 2025 RUSH
 						</Button>
 				</Stack>
 		</Box>
