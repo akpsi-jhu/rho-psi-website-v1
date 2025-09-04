@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.23987193.css",
-    "main.js": "/static/js/main.70bd8d7f.js",
+    "main.js": "/static/js/main.9a6b6fa5.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/city.png": "/static/media/city.bdad29d412c59a40601c.png",
-    "static/media/RushChairsSpring2025.png": "/static/media/RushChairsSpring2025.2cf1f5c5b1dd2b0bee86.png",
     "static/media/social.png": "/static/media/social.87502cef16875efd17c2.png",
     "static/media/prof.png": "/static/media/prof.175a9844347960443d62.png",
     "static/media/brotherhood.png": "/static/media/brotherhood.ec474e1c3dfa6ebffeec.png",
-    "static/media/S25RushBanner.png": "/static/media/S25RushBanner.4cdd846a290620ffea56.png",
+    "static/media/F25RushBanner.jpg": "/static/media/F25RushBanner.b3ba5edc8bbccaa04a05.jpg",
     "static/media/google.png": "/static/media/google.3787d4708786db4554f7.png",
     "static/media/citi.png": "/static/media/citi.2888b81b7dbaafc1cfae.png",
     "static/media/microsoft.png": "/static/media/microsoft.f7bf90837fdd9355e907.png",
     "static/media/Deloitte.png": "/static/media/Deloitte.872a25382cb86e0b8fd5.png",
     "static/media/bofa.png": "/static/media/bofa.4dbd22e6f884537d14cf.png",
+    "static/media/RushChairsFall2025.png": "/static/media/RushChairsFall2025.a376d01372d45c368573.png",
     "static/media/Y.png": "/static/media/Y.751746cf54d8bd5c84b5.png",
     "static/media/amazon.png": "/static/media/amazon.feef187e0a9a655c736a.png",
     "static/media/blackstone.png": "/static/media/blackstone.a8a3a3a3ddf77bad2bf0.png",
@@ -29,11 +29,11 @@
     "static/media/jpm.png": "/static/media/jpm.85a43bc80573bc268fb8.png",
     "index.html": "/index.html",
     "main.23987193.css.map": "/static/css/main.23987193.css.map",
-    "main.70bd8d7f.js.map": "/static/js/main.70bd8d7f.js.map",
+    "main.9a6b6fa5.js.map": "/static/js/main.9a6b6fa5.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23987193.css",
-    "static/js/main.70bd8d7f.js"
+    "static/js/main.9a6b6fa5.js"
   ]
 }

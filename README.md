@@ -1,3 +1,6 @@
+### Update History
+- 2025-01-24, Ethan Lee: Added deployment instructions.
+
 ## Website Deployment Instructions
 
 Follow the steps below to deploy the website to [akpsi.students.jh.edu](https://akpsi.students.jh.edu):
