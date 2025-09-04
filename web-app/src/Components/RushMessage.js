@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack, Box, Typography, Button } from "@mui/material";
-import rushChairIMG from "../assets/RushChairsSpring2025.png";
+import rushChairIMG from "../assets/RushChairsFall2025.png";
 import ImageBox from "./ImageBox";
 
 const RushMessage = () => {
@@ -8,7 +8,7 @@ const RushMessage = () => {
         <Stack spacing={8} >
             <Stack spacing={3}>
                               <Button
-                        href={"https://forms.gle/P5WAQzvQY9kP1BxPA"}
+                        href={"https://docs.google.com/forms/d/e/1FAIpQLScsmJPT5l4XvycBIF6ZP-8mlkTnhVmS1kpQn_PHQBf6xKLABw/viewform"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
@@ -17,7 +17,7 @@ const RushMessage = () => {
                         Non-binding Interest Form
                     </Button>
                     <Button
-                        href={"https://forms.gle/JCfdiab8YntV1TGC6"}
+                        href={"https://docs.google.com/forms/d/e/1FAIpQLSdF1Ps6sBavdxlI8Ieshh5_MnKDnnpp7X8ugreWKbkFuPDPJA/viewform"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
@@ -26,7 +26,7 @@ const RushMessage = () => {
                         Sign Up for Coffee Chats
                     </Button>
                     <Button    
-                        href={"https://groupme.com/join_group/105397629/5fu5jMwM"}
+                        href={"https://web.groupme.com/join_group/109515248/Z1ME1DPB"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
@@ -57,17 +57,11 @@ const RushMessage = () => {
                 <Stack height="100%" spacing={4} textAlign="left">
                     <Stack spacing={3} textAlign="left">
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
-                                    fontWeight={400}>Hi everyone! I’m Julia Tuinman, and I’m thrilled to be your rush chair this semester. I’m a sophomore majoring in Computer Science from Michigan. Going through the rush process with AKPsi was one of the best decisions I’ve made—it introduced me to some incredible people and a supportive community that I’m so grateful to be part of. AKPsi has also helped me grow professionally and opened doors to exciting new opportunities. I can’t wait to meet all of you at our events!</Typography>
+                                    fontWeight={400}>Hey everyone! I’m Sofia, a junior studying Economics, and I rushed AKPsi last fall where I met some of my closest friends. I love how AKPsi brings together people from different backgrounds and has pushed me to explore professionally by learning from so many around me. I took on the role of Rush Chair because I want to help AKPsi continue to grow and make the process as smooth and fun as it was for me. Can’t wait to meet you all soon!</Typography>
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
-                                    fontWeight={400}>Hi everyone! My name is Miles and I’m a sophomore studying Applied Math, originally from Berwyn, Pennsylvania. I’m looking forward to meeting you all as your rush chair! I’ve met so many great people and gained access to so many amazing opportunities through AKPsi and I want to do my best to give back. I’ll do my best to make rush as fun for you as it was for me.</Typography>
+                                    fontWeight={400}>Hey guys! My name is Martin Hilser, and I’m excited to meet all of you as a Rush Chair this semester! I’m a senior studying Molecular and Cellular Biology, and I grew up in Ellicott City, Maryland. Through AKPsi, I have been lucky to meet so many lively and motivated people who have become some of my best friends, and so I am grateful for this opportunity to give back to AKPsi, and to help it continue to grow. I can’t wait to meet you guys, and to give you the same amazing rush experience I had!</Typography>
                         <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
-                                    fontWeight={400}>Hi! My name is Alyssa Chu, and I’m so excited to be one of your rush chairs this semester! I am a sophomore majoring in Public Health and Molecular and Cellular Biology from Pasadena, California. Joining AKPsi has helped me grow so much professionally and socially, and I have had the pleasure of meeting so many motivated, intelligent, and lively people through this fraternity. I am so pumped to meet you all through our events and show you what AKPsi is all about!</Typography>
-                        <Typography variant="h7" fontFamily="" lineHeight={1.5} fontSize={{xs: 16, md: 16, lg: 16}}
-                                    fontWeight={400}>Our first and foremost advice for rush is to be yourself! Dont be
-                            shy to meet new people and make meaningful connections. Try to learn about all the awesome
-                            experiences our brothers have gotten from AKPsi. Get the most out of rush, and put yourself
-                            out there to find out what makes you excited about the brotherhood! We are so so excited to
-                            meet you all!</Typography>
+                                    fontWeight={400}>Our advice for rush would be to have fun with the process, be yourself, and remember it’s also about seeing if we’re the right fit for you. We’re just as excited to meet you as you are to meet us!</Typography>
                     </Stack>
                 </Stack>
                 <ImageBox src={rushChairIMG}/>
