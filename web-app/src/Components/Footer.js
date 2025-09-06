@@ -31,7 +31,7 @@ return (
 	</Stack>
     <Stack spacing={1}>
         <Typography sx={{fontSize:12, fontFamily: "glegoo"}}>Copyright @ 2023 Alpha Kappa Psi Rho Psi. All Rights Reserved. </Typography>
-        <Typography sx={{fontSize:12, fontFamily: "glegoo"}}>Site by Anthony Sky Ng-Thow Hing & Liwen Tran </Typography>
+        <Typography sx={{fontSize:12, fontFamily: "glegoo"}}>Site by Anthony Sky Ng-Thow Hing & Liwen Tran & Ethan Lee</Typography>
     </Stack>
 	</Stack>
 );

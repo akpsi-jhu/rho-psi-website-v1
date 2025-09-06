@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack, Box, Typography, Button } from "@mui/material";
-import rushChairIMG from "../assets/RushChairsFall2025.png";
+import rushChairIMG from "../assets/RushChairsFall2025.jpeg";
 import ImageBox from "./ImageBox";
 
 const RushMessage = () => {

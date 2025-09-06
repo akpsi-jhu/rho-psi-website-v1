@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar/Navbar"
 import RushMessage from "../Components/RushMessage"
 import Footer from "../Components/Footer";
 import Title from "../Components/Title";
-import recruitment from "../assets/F25RushBanner.jpg";
+import recruitment from "../assets/F25RushBanner.jpeg";
 import Faq from "../Components/Faq"
 import TagHeader from "../Components/TagHeader";
 import SideBar from "../Components/Sidebar/Sidebar";
