@@ -7,8 +7,8 @@ const RushMessage = () => {
 	return (
         <Stack spacing={8} >
             <Stack spacing={3}>
-                              <Button
-                        href={"https://docs.google.com/forms/d/e/1FAIpQLScsmJPT5l4XvycBIF6ZP-8mlkTnhVmS1kpQn_PHQBf6xKLABw/viewform"}
+                    <Button
+                        href={"https://forms.gle/m8Ef32CGwkiQTB9i7"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
@@ -17,7 +17,7 @@ const RushMessage = () => {
                         Non-binding Interest Form
                     </Button>
                     <Button
-                        href={"https://docs.google.com/forms/d/e/1FAIpQLSdF1Ps6sBavdxlI8Ieshh5_MnKDnnpp7X8ugreWKbkFuPDPJA/viewform"}
+                        href={"https://forms.gle/ZRj14cTtpj76QQ3X7"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
@@ -26,7 +26,7 @@ const RushMessage = () => {
                         Sign Up for Coffee Chats
                     </Button>
                     <Button    
-                        href={"https://web.groupme.com/join_group/109515248/Z1ME1DPB"}
+                        href={"https://groupme.com/join_group/112238053/WpWo2ZGo"}
                         target={"_blank"}
                         variant="outlined"
                         sx={{
