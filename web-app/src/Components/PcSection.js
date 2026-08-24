@@ -12,9 +12,10 @@ const PcSection = (props) => {
     "Alpha Tau",
     "Alpha Upsilon",
     "Alpha Phi",
-    "Alpha Chi"
+    "Alpha Chi",
+    "Alpha Psi"
   ];
-  const pcYears = ["2023-1", "2023-2", "2024-1", "2024-2", "2025-1", "2025-2"];
+  const pcYears = ["2023-1", "2023-2", "2024-1", "2024-2", "2025-1", "2025-2", "2026-1"];
 
   // Find the index of the pc in pcYears
   const pcIndex = pcYears.indexOf(pc);
