@@ -1,6 +1,10 @@
 ### Update History
 - 2025-01-24, Ethan Lee: Added deployment instructions.
 
+## Accessing Firebase
+
+The AKPsi email has owner perms to the Firebase, ask exec to share it with your email
+
 ## Website Deployment Instructions
 
 Follow the steps below to deploy the website to [akpsi.students.jh.edu](https://akpsi.students.jh.edu):
